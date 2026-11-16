@@ -1,191 +1,69 @@
-<div align="center">
+# Cupertino Cream
 
-![](img/hero.png)
+A warm, reading-focused **Obsidian theme** built as a fork of [Cupertino](https://github.com/svnaxis/obsidian-cupertino), with Notion-like paper warmth, restrained Cupertino red accents and clear academic-document headings.
 
-### Crafted for the way you think.
+**Companion theme:** [Cupertino Cream for Zotero](https://github.com/vict0rg/cupertino-cream-for-zotero) — recommended for a visually consistent research workflow across notes and PDFs.
 
-_Best Theme of [Obsidian Gems of the Year 2024](https://obsidian.md/blog/2024-goty-winners/)_
+> **v0.1.0 preview:** This theme is available for manual installation. It has **not yet been accepted into Obsidian's Community Themes directory**, and visual compatibility remains under testing.
 
-<a href="https://community.obsidian.md/themes/cupertino"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/Add%20to%20Obsidian.svg?size=default&amp;theme=violet&amp;mode=dark&amp;logo=obsidian"><img alt="badge" src="https://shieldcn.dev/badge/Add%20to%20Obsidian.svg?size=default&amp;theme=violet&amp;mode=light&amp;logo=obsidian"></picture></a>
-<a href="https://buymeacoffee.com/svnaxis"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/Buy%20me%20a%20coffee.svg?size=default&amp;theme=amber&amp;mode=dark&amp;logo=buymeacoffee"><img alt="badge" src="https://shieldcn.dev/badge/Buy%20me%20a%20coffee.svg?size=default&amp;theme=amber&amp;mode=light&amp;logo=buymeacoffee"></picture></a>
-<a href="https://wikipedia.org/wiki/Taiwan"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/Made%20in-Taiwan.svg?variant=secondary&amp;size=default&amp;mode=dark&amp;logo=ri%3AFaHeart&amp;labelGap=3"><img alt="badge" src="https://shieldcn.dev/badge/Made%20in-Taiwan.svg?variant=secondary&amp;size=default&amp;mode=light&amp;logo=ri%3AFaHeart&amp;labelGap=3"></picture></a>
+## Design principles
 
-</div>
+- **Calm paper surfaces:** warm cream notes instead of bright white, and coordinated sand-colored panels.
+- **A single restrained red accent:** Cupertino red is used for active-item markers, heading rules and focused controls, not large blocks of text.
+- **Better heading hierarchy:** H1/H2 have a left red marker and a delicate underline; H3/H4 use thinner markers. Applied in both Reading and Live Preview modes.
+- **No graph-paper grid** in the editor or reading view.
+- **Light and dark variants** following the same visual language.
+- **No remote fonts, images or scripts:** the CSS is based on the MIT-licensed Cupertino source and our appended design overrides.
 
-## Overview
+## Shared palette
 
-### Fresh. Familiar. Focused.
+| Role | Color |
+| --- | --- |
+| Note paper | `#FFFDF9` |
+| PDF Soft Cream companion preset | `#F7F1E5` |
+| Sidebars | `#F3EDE5` |
+| Toolbars | `#EEE5DC` |
+| Main text | `#332E2B` |
+| Cupertino red | `#FF3B30` |
+| Selected item | `#F8E3E0` |
 
-**Feels right at home.** Clean typography, refined spacing, and native-inspired components make Cupertino feel like it belongs on any device.
+## Manual installation
 
-![](img/adaptive.png)
+Until the theme is accepted into Obsidian's catalog:
 
-**Built for mobile.** Everything is redesigned for touch. One-hand reachability, comfortable spacing, and intuitive layout make your vault feel right in your pocket.
+1. Download both **`theme.css`** and **`manifest.json`** from the [v0.1.0 GitHub Release](https://github.com/vict0rg/obsidian-cupertino-cream/releases/tag/0.1.0).
+2. In your vault create `.obsidian/themes/Cupertino Cream/`.
+3. Copy **both files** into that folder.
+4. In Obsidian open **Settings → Appearance → Themes**, reload the themes if needed and select **Cupertino Cream**.
+5. Disable any CSS snippets previously used to override Pixel-Blue grids or palettes; they may conflict with this theme.
 
-![](img/mobile.png)
+Your notes and plugins are not modified. Returning to the original **Cupertino** theme is simply a matter of selecting it again.
 
-## Philosophy
+## Paired Zotero appearance
 
-### Less is more.
+For matching warm navigation panels and PDF backgrounds, install **[Cupertino Cream for Zotero](https://github.com/vict0rg/cupertino-cream-for-zotero)**. Its reader includes **Soft Cream**, **Soft Blue**, **Soft Sage**, **Soft Paper** and **Original** background choices. The theme keeps Zotero's main menu visible and the metadata navigation controls in their own pane.
 
-Cupertino exists because great tools should just work. No rabbit holes. No endless tweaking. Just a beautiful, distraction-free place to think and write.
+The two projects are independent extensions hosted in separate repositories. Install and update each one separately.
 
-- **Fewer plugins**
+## Directory submission status
 
-  Everything you need is here without plugins. Cupertino is complete the moment you install it.
+**Not yet submitted / not yet approved.** Obsidian requires a public GitHub release that includes `theme.css` and `manifest.json`, and an **actual screenshot** of this theme. The repository and matching release are prepared; a screenshot captured from the installed theme and the official directory submission/review remain.
 
-- **Fewer customizations**
+To finish the submission, sign in at [Obsidian Community Directory](https://community.obsidian.md), link your GitHub account, and submit this repository under **Themes**. The directory's review process, not the GitHub release, determines when the theme appears under **Appearance → Themes → Manage**. See [SUBMISSION.md](SUBMISSION.md).
 
-  Every option is an invitation to procrastinate. Cupertino keeps choices intentionally minimal so you stay in flow.
+## Development
 
-- **Less visual noise**
+The repository is a real fork of upstream **Cupertino** with its Git history preserved. The `theme.css` file contains the upstream design plus the Cupertino Cream overrides near the end. To validate:
 
-  Low-priority UI elements step back automatically. What remains is what matters.
+```bash
+node scripts/check-theme.mjs
+```
 
-## Plugins
+## Credits and licensing
 
-Cupertino works beautifully on its own. These plugins let you fine-tune the experience if you'd like.
+- [Cupertino for Obsidian](https://github.com/svnaxis/obsidian-cupertino) by **Alexis C / svnaxis** — the underlying theme's source code, layouts and visual components. **MIT License**, with the original copyright notice retained.
+- [Notation](https://github.com/deathau/Notation-for-Obsidian) by **deathau** — a Notion-inspired warm reading design reference, distributed under **The Unlicense**. No Notation source code or artwork is copied into this fork.
+- [Cupertino for Zotero](https://github.com/shenghuang-123/cupertino-for-zotero) by **shenghuang-123 and contributors** — the inspiration for the shared small red accent; **MIT License**. No Zotero source code is included in this Obsidian theme.
+- [Cupertino Cream for Zotero](https://github.com/vict0rg/cupertino-cream-for-zotero) — the companion project for a unified reading environment.
 
-### [Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings)
-
-Enable focus view, hover sidebars. Or disable active line highlight, centered tabs, and compact status bar, and more.
-
-### [Pseudo Mica](https://community.obsidian.md/plugins/pseudo-mica)
-
-Bring translucent window effects to Windows and macOS for an even more native feel.
-
-## Features
-
-Cupertino supports all filter and helper classes from [Minimal](https://github.com/kepano/obsidian-minimal).
-
-### Banner
-
-| Class                   | Description                                                                                 |
-| :---------------------- | :------------------------------------------------------------------------------------------ |
-| `banner`                | Add at the end of the image link, e.g. `![[image.jpeg\|banner]]`                            |
-| `banner-fade`           | Add faded edge to the banner (requires `banner`)                                            |
-| `banner-icon`           | Add an emoji or letter as note icon using callout, e.g. `> [!banner-icon] 👋`               |
-| `banner-title`          | Moves inline title next to the icon (requires `banner-icon`)                                |
-| `y0`, `y5`... to `y100` | Adjust the vertical position of the banner (requires `banner`), from 0 to 100 in steps of 5 |
-
-### [Block width](https://minimal.guide/features/block-width)
-
-| Class                                  | Description                           |
-| :------------------------------------- | :------------------------------------ |
-| `wide`                                 | Entire note uses wide line width      |
-| `max`                                  | Entire note uses max line width       |
-| `table-100`, `bases-100`, `img-100`    | Fill 100% of the pane width           |
-| `table-max`, `bases-max`, `img-max`    | Fill the max line width (default 90%) |
-| `table-wide`, `bases-wide`, `img-wide` | Fill the wide line width              |
-
-### [Cards](https://minimal.guide/Block+types/Cards)
-
-| Class                 | Description                                      |
-| :-------------------- | :----------------------------------------------- |
-| `cards` (required)    | Set all Dataview tables to card layout           |
-| `list-cards`          | Set all bullet lists to card layout              |
-| `cards-align-bottom`  | Align the last element of a card to the bottom   |
-| `cards-cover`         | Images are resized to fill the defined space     |
-| `cards-16-9`          | Fit images in cards to 16:9 ratio                |
-| `cards-1-1`           | Fit images in cards to 1:1 ratio (square)        |
-| `cards-2-1`           | Fit images in cards to 2:1 ratio                 |
-| `cards-2-3`           | Fit images in cards to 2:3 ratio                 |
-| `cards-cols-1` to `8` | Force a specific number of columns (from 1 to 8) |
-
-### Embeds
-
-| Class              | Description              |
-| :----------------- | :----------------------- |
-| `embed-strict`     | Remove embed background  |
-| `embed-hide-title` | Hide embedded file title |
-
-### [Image filters](https://minimal.guide/images#Image+filters)
-
-Add at the end of the image link, e.g. `![[image.jpeg#invert]]`
-
-| Filter       | Description                                                                        |
-| :----------- | :--------------------------------------------------------------------------------- |
-| `#blend`     | Blend image into background                                                        |
-| `#invert`    | Invert images in dark mode — ideal for charts and handwriting on light backgrounds |
-| `#invertW`   | Invert images in light mode — ideal for charts and handwriting on dark backgrounds |
-| `#circle`    | Crop image to a circle                                                             |
-| `#outline`   | Add outline around image                                                           |
-| `#interface` | Add drop shadow behind image                                                       |
-
-### [Image grids](https://minimal.guide/Block+types/Image+grids)
-
-| Class      | Description          |
-| :--------- | :------------------- |
-| `img-grid` | Activate image grids |
-
-### [Tables](https://minimal.guide/tables)
-
-| Class           | Description                                         |
-| :-------------- | :-------------------------------------------------- |
-| `table-nowrap`  | Disable line wrapping in table cells                |
-| `table-wrap`    | Force line wrapping in table cells                  |
-| `table-center`  | Center small tables narrower than line width        |
-| `table-numbers` | Add row numbers to tables                           |
-| `table-tabular` | Use tabular figures in tables                       |
-| `table-small`   | Use small font size in tables                       |
-| `table-tiny`    | Use tiny font size in tables                        |
-| `table-lines`   | Add borders around all table cells                  |
-| `row-lines`     | Add borders between table rows                      |
-| `col-lines`     | Add borders between table columns                   |
-| `row-alt`       | Add striped background to alternating table rows    |
-| `col-alt`       | Add striped background to alternating table columns |
-| `row-hover`     | Highlight rows on hover                             |
-
-### [Bases](https://minimal.guide/tables)
-
-| Class           | Description                                                    |
-| :-------------- | :------------------------------------------------------------- |
-| `bases-row-alt` | Add striped background to alternating Bases table view rows    |
-| `bases-col-alt` | Add striped background to alternating Bases table view columns |
-| `bases-plain`   | Hide embedded Bases toolbar                                    |
-
-### [Alternate checkboxes](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set)
-
-![](img/checkbox.png)
-
-| Syntax  | Description |
-| ------- | ----------- |
-| `- [ ]` | To-do       |
-| `- [/]` | Incomplete  |
-| `- [x]` | Done        |
-| `- [-]` | Canceled    |
-| `- [>]` | Forwarded   |
-| `- [<]` | Scheduling  |
-| `- [?]` | Question    |
-| `- [!]` | Important   |
-| `- [*]` | Star        |
-| `- ["]` | Quote       |
-| `- [l]` | Location    |
-| `- [b]` | Bookmark    |
-| `- [i]` | Information |
-| `- [S]` | Savings     |
-| `- [I]` | Idea        |
-| `- [p]` | Pros        |
-| `- [c]` | Cons        |
-| `- [f]` | Fire        |
-| `- [k]` | Key         |
-| `- [w]` | Win         |
-| `- [u]` | Up          |
-| `- [d]` | Down        |
-| `- [+]` | Add         |
-| `- [B]` | Brainstorm  |
-| `- [a]` | Alarm       |
-| `- [n]` | Note        |
-| `- [R]` | Review      |
-| `- [t]` | Time        |
-| `- [P]` | Phone       |
-| `- [L]` | Love        |
-
-## Credits
-
-- [**Yushan Main East Peak** by Huang Chung Yu](https://commons.wikimedia.org/wiki/File:Yushan_main_east_peak%2BHuang_Chung_Yu%E9%BB%83%E4%B8%AD%E4%BD%91%2B9030.png) - Yushan background
-- [**Minimal** by kepano](https://github.com/kepano/obsidian-minimal) ([Donate](https://www.buymeacoffee.com/kepano)) - Dataview cards, image filters, table helper classes
-
-## License
-
-Cupertino is licensed under the [MIT license](LICENSE).
+For a precise distinction between reused source and inspiration, see [CREDITS.md](CREDITS.md), [NOTICE.md](NOTICE.md), and [LICENSE](LICENSE). **Independent community fork:** not endorsed by Obsidian, Notation, or the upstream Cupertino authors.

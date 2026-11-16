@@ -1,8 +1,7 @@
 {
-  "name": "Cupertino",
-  "version": "4.1.1",
+  "name": "Cupertino Cream",
+  "version": "0.1.0",
   "minAppVersion": "1.14.0",
-  "author": "Alexis C",
-  "authorUrl": "https://github.com/svnaxis",
-  "fundingUrl": "https://www.buymeacoffee.com/svnaxis"
+  "author": "vict0rg",
+  "authorUrl": "https://github.com/vict0rg"
 }
