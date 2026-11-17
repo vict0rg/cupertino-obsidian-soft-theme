@@ -42,7 +42,7 @@ The **Typewriter** ([GPL-3.0](https://github.com/crashmoney/obsidian-typewriter)
 
 Until the theme is accepted into Obsidian's catalog:
 
-1. Download both **`theme.css`** and **`manifest.json`** from the [v0.1.1 GitHub Release](https://github.com/vict0rg/obsidian-cupertino-cream/releases/tag/0.1.1).
+1. While GitHub Actions is not enabled for the fork, download the current **[`theme.css`](https://raw.githubusercontent.com/vict0rg/obsidian-cupertino-cream/main/theme.css)** and **[`manifest.json`](https://raw.githubusercontent.com/vict0rg/obsidian-cupertino-cream/main/manifest.json)** directly from this repository. A tagged GitHub release will be available after the owner enables Actions.
 2. In your vault create `.obsidian/themes/Cupertino Cream/`.
 3. Copy **both files** into that folder.
 4. In Obsidian open **Settings → Appearance → Themes**, reload the themes if needed and select **Cupertino Cream**.
@@ -58,7 +58,7 @@ The two projects are independent extensions hosted in separate repositories. Ins
 
 ## Directory submission status
 
-**Not yet submitted / not yet approved.** Obsidian requires a public GitHub release that includes `theme.css` and `manifest.json`, and an **actual screenshot** of this theme. The repository and matching release are prepared; a screenshot captured from the installed theme and the official directory submission/review remain.
+**Not yet submitted / not yet approved.** The v0.1.1 source is ready, but GitHub Actions is not yet enabled for this fork and no tagged release currently exists. Obsidian requires a public GitHub release that includes `theme.css` and `manifest.json`, and an **actual screenshot** of this theme. The repository and matching release are prepared; a screenshot captured from the installed theme and the official directory submission/review remain.
 
 To finish the submission, sign in at [Obsidian Community Directory](https://community.obsidian.md), link your GitHub account, and submit this repository under **Themes**. The directory's review process, not the GitHub release, determines when the theme appears under **Appearance → Themes → Manage**. See [SUBMISSION.md](SUBMISSION.md).
 
