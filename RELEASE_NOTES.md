@@ -1,14 +1,15 @@
-# Cupertino Cream for Obsidian v0.1.1 — Letter Paper
+# Obsidian Cupertino Soft Theme 0.2.0
 
-An iterative refinement to the shared **Cupertino Cream** visual identity.
+Public rebrand of the MIT-licensed Cupertino for Obsidian fork.
 
-- Warm, lighter ivory note background: `#FFF9EC`, a little lighter and less brown than Typewriter.
-- Matching companion **[Cupertino Cream for Zotero v0.3.2](https://github.com/vict0rg/cupertino-cream-for-zotero)** using the same Soft Cream PDF preset.
-- Heading markers use **glyph-sized short bars** in Live Preview and Reading rather than full line-height borders.
-- Bullets and list markers use a soft coral tint.
-- Alternating table rows and a muted header color improve scanning without strong gridlines.
-- Original Cupertino (MIT) remains the licensed source. Typewriter (GPL-3.0), Shimmering Focus (MIT), and Olivier's Theme (MIT) served as **visual references only**, with no reused source.
+- Soft Paper (`#FAFAF7`) in the editor and reading view.
+- Cool gray sidebars (`#F1F2F3`), tabs (`#E8EAEC`) and borders (`#DDE0E3`).
+- Soft coral H1–H4, Markdown token highlights, links and supported citations.
+- Removed heading bars and underlines entirely.
+- Restored Linux native titlebar button sizes; red close button on hover.
+- Gray zebra tables, restrained bullet colors and dark-mode palette.
+- Cross-promotion of [Zotero Cupertino Soft Theme](https://github.com/vict0rg/zotero-cupertino-soft-theme).
 
-**Installation:** place `theme.css` and `manifest.json` from this release into `.obsidian/themes/Cupertino Cream/` and select the theme in Obsidian Appearance.
+Install the two attached files into `.obsidian/themes/Cupertino Soft/`. This theme has **not yet been reviewed or accepted** into the official Obsidian gallery.
 
-**Directory status:** Not yet published in the official Community Themes gallery.
+Credits: Cupertino by svnaxis (MIT) reused with license notice and history preserved. Notation (Unlicense), Typewriter (GPL-3.0), Shimmering Focus (MIT), Olivier's Theme (MIT), Cupertino for Zotero (MIT) used as design references only without copying their source.

@@ -1,3 +1,3 @@
-# Community gallery screenshot
+# Gallery screenshot
 
-An actual screenshot of Cupertino Cream running in Obsidian must be captured before submission to the official gallery. Recommended size: 512 × 288 pixels. Please do **not** replace this with the original upstream Cupertino screenshot or a synthetic mockup. Once supplied, save it as `screenshots/cream-light.png` and reference that file in the Obsidian Community Directory submission.
+A real screenshot showing **Cupertino Soft** inside Obsidian is required for official gallery review. Suggested size: 512×288. When available, save as `screenshots/soft-light.png` and reference it in the Community Directory submission. Do not substitute a synthetic mock-up or upstream screenshot.

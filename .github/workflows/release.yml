@@ -1,4 +1,4 @@
-name: Validate and release Cupertino Cream
+name: Validate and release Cupertino Soft
 on:
   push:
     branches: [main]
@@ -6,30 +6,25 @@ on:
 permissions:
   contents: write
 jobs:
-  validate-release:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Verify theme, manifest and upstream copyright
+      - uses: actions/checkout@v4
+      - name: Verify CSS and manifest
         run: node scripts/check-theme.mjs
-      - name: Verify release files
-        run: |
-          test -s theme.css
-          test -s manifest.json
-          test -s LICENSE
-      - name: Publish 0.1.1 preview release
+      - name: Validate required files
+        run: test -s theme.css && test -s manifest.json && test -s LICENSE
+      - name: Publish release for Obsidian
         env:
           GH_TOKEN: ${{ github.token }}
-        shell: bash
         run: |
           set -euo pipefail
           VERSION=$(node -p "require('./manifest.json').version")
           if gh release view "$VERSION" >/dev/null 2>&1; then
-            echo "Release $VERSION already exists."
+            echo "Release $VERSION exists"
           else
             gh release create "$VERSION" theme.css manifest.json \
               --target "$GITHUB_SHA" \
-              --title "Cupertino Cream for Obsidian $VERSION" \
-              --prerelease --notes-file RELEASE_NOTES.md
+              --title "Obsidian Cupertino Soft Theme $VERSION" \
+              --notes-file RELEASE_NOTES.md
           fi

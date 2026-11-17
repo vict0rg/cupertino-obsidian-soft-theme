@@ -1,17 +1,11 @@
 # Copyright and third-party notices
 
-**Cupertino for Obsidian (upstream)**
+**Cupertino for Obsidian** — Copyright (c) 2026 svnaxis; MIT. Base source and design components reused under the complete copyright and permission text retained in [LICENSE](LICENSE) and [LICENSE.txt](LICENSE.txt).
 
-Copyright (c) 2026 svnaxis. Source and UI components used and modified under the MIT License, with the original notice and permission text kept intact in LICENSE and LICENSE.txt.
+**Obsidian Cupertino Soft Theme** — new CSS changes and documentation Copyright (c) 2026 vict0rg and contributors, to the extent applicable, under MIT terms.
 
-**Cupertino Cream derivative**
+Design inspirations only, with no copied source or assets: Notation (The Unlicense), Typewriter (GPL-3.0), Shimmering Focus (MIT), Olivier's Theme (MIT), and Cupertino for Zotero (MIT).
 
-Copyright (c) 2026 vict0rg and contributors for new changes, to the extent applicable. New work is provided under MIT terms alongside the preserved upstream terms.
+Separate recommended project: [Zotero Cupertino Soft Theme](https://github.com/vict0rg/zotero-cupertino-soft-theme). No Zotero code is bundled here.
 
-**Visual and functional references, not copied dependencies**
-
-- Notation by deathau (The Unlicense): inspiration for the warm Notion-like paper palette. No source or assets copied.
-- Cupertino for Zotero by shenghuang-123 and contributors (MIT): reference for the small red accent. No Zotero plugin source included.
-- Cupertino Cream for Zotero by vict0rg: separate companion add-on.
-
-See CREDITS.md for attribution links and scope. This project is independent, not endorsed by Obsidian or the referenced creators.
+See [CREDITS.md](CREDITS.md). This independent theme is not endorsed by its references.
