@@ -2,7 +2,7 @@
 # Installer for Obsidian Cupertino Soft Theme, Linux.
 set -euo pipefail
 VAULT="${1:-$HOME/Dropbox/500-OBSIDIAN}"
-BASE="https://raw.githubusercontent.com/vict0rg/obsidian-cupertino-soft-theme/main"
+BASE="https://raw.githubusercontent.com/vict0rg/cupertino-obsidian-soft-theme/main"
 TARGET="$VAULT/.obsidian/themes/Cupertino Soft"
 test -d "$VAULT/.obsidian" || { echo "Missing Obsidian vault: $VAULT" >&2; exit 2; }
 command -v curl >/dev/null || { echo "curl is required" >&2; exit 2; }

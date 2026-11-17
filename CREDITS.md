@@ -21,8 +21,8 @@ These works informed earlier design exploration; **the current Soft Paper palett
 
 ## Separate companion extension
 
-[Zotero Cupertino Soft Theme](https://github.com/vict0rg/zotero-cupertino-soft-theme) — matching Zotero theme and native PDF background controls. It is installed and maintained independently and is recommended for a coordinated reading workflow.
+[Cupertino Zotero Soft Theme](https://github.com/vict0rg/cupertino-zotero-soft-theme) — matching Zotero theme and native PDF background controls. It is installed and maintained independently and is recommended for a coordinated reading workflow.
 
 ## Derivative work
 
-The new palette, Markdown highlighting, controls and table styling are authored for [vict0rg/obsidian-cupertino-soft-theme](https://github.com/vict0rg/obsidian-cupertino-soft-theme). Independent community project; no endorsement by Obsidian or any upstream developer is implied. Attribution documents the scope of reused source; it is not a certification of third-party licensing beyond that scope.
+The new palette, Markdown highlighting, controls and table styling are authored for [vict0rg/cupertino-obsidian-soft-theme](https://github.com/vict0rg/cupertino-obsidian-soft-theme). Independent community project; no endorsement by Obsidian or any upstream developer is implied. Attribution documents the scope of reused source; it is not a certification of third-party licensing beyond that scope.

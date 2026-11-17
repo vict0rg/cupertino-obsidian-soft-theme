@@ -1,12 +1,12 @@
 /*
- * OBSIDIAN CUPERTINO SOFT THEME v0.2.1
+ * CUPERTINO OBSIDIAN SOFT THEME v0.3.0
  * License: MIT. Maintainer: vict0rg (https://github.com/vict0rg)
  * This simplified stylesheet replaces legacy Cupertino layout manipulation
  * with restrained appearance-only CSS. It intentionally leaves window menus,
  * titlebar buttons, ribbon icons, side-dock headers and tabs to Obsidian.
  *
  * Historical upstream fork: svnaxis/obsidian-cupertino (MIT).
- * Separate companion: vict0rg/zotero-cupertino-soft-theme (MIT).
+ * Separate companion: vict0rg/cupertino-zotero-soft-theme (MIT).
  * References: Notation (Unlicense), Typewriter (GPL-3.0),
  * Shimmering Focus (MIT), Olivier's Theme (MIT) — visual references only.
  */
@@ -15,34 +15,34 @@
   color-scheme: light;
   /* Soft Paper documents; pale Cupertino gray interface */
   --soft-paper: #FAFAF7;
-  --soft-sidebar: #F1F2F3;
-  --soft-topbar: #E8EAEC;
-  --soft-border: #DDE0E3;
-  --soft-row-alt: #F4F5F5;
-  --soft-table-head: #ECEEF0;
+  --soft-sidebar: #F3F3F3;
+  --soft-topbar: #EEEEEE;
+  --soft-border: #DDDEDE;
+  --soft-row-alt: #F3F4F2;
+  --soft-table-head: #E7E9E7;
   --soft-ink: #31353A;
   --soft-muted: #697179;
-  --soft-coral: #C97073;
-  --soft-coral-text: #B65D63;
-  --soft-coral-muted: #D58B8E;
+  --soft-coral: #D78381;
+  --soft-coral-text: #B35F62;
+  --soft-coral-muted: #D69B9A;
 
   --background-primary: #FAFAF7;
   --background-primary-alt: #F8F9F7;
-  --background-secondary: #F1F2F3;
-  --background-secondary-alt: #E8EAEC;
-  --background-modifier-border: #DDE0E3;
-  --background-modifier-border-hover: #C7CCD0;
+  --background-secondary: #F3F3F3;
+  --background-secondary-alt: #EEEEEE;
+  --background-modifier-border: #DDDEDE;
+  --background-modifier-border-hover: #C7CAC9;
   --background-modifier-border-focus: #B8BFC5;
   --background-modifier-form-field: #FAFAF7;
   --background-modifier-hover: rgba(72, 82, 93, 0.055);
   --background-modifier-active-hover: rgba(72, 82, 93, 0.09);
-  --background-modifier-message: #F1F2F3;
+  --background-modifier-message: #F3F3F3;
   --color-base-00: #FAFAF7;
   --color-base-05: #F9FAF8;
   --color-base-10: #F8F9F7;
-  --color-base-20: #F4F5F5;
-  --color-base-25: #F1F2F3;
-  --color-base-30: #E8EAEC;
+  --color-base-20: #F3F4F2;
+  --color-base-25: #F3F3F3;
+  --color-base-30: #EEEEEE;
   --color-base-35: #DFE2E5;
   --color-base-40: #D2D6DA;
   --color-base-50: #ACB3B9;
@@ -52,44 +52,44 @@
   --text-normal: #31353A;
   --text-muted: #697179;
   --text-faint: #969DA3;
-  --text-accent: #B65D63;
+  --text-accent: #B35F62;
   --text-accent-hover: #A24D55;
   --text-on-accent: #FFFFFF;
-  --interactive-accent: #C97073;
-  --interactive-accent-hover: #B85D64;
+  --interactive-accent: #D78381;
+  --interactive-accent-hover: #C47373;
   --interactive-normal: #FAFAF7;
-  --interactive-hover: #F1F2F3;
+  --interactive-hover: #F3F3F3;
   --nav-item-color: #59616A;
   --nav-item-color-hover: #31353A;
   --nav-item-color-active: #31353A;
-  --nav-item-background-active: #E6E9EB;
-  --nav-item-background-hover: #EAEDF0;
-  --titlebar-background: #E8EAEC;
-  --titlebar-background-focused: #E8EAEC;
+  --nav-item-background-active: #F5E6E6;
+  --nav-item-background-hover: #F1E9E9;
+  --titlebar-background: #EEEEEE;
+  --titlebar-background-focused: #EEEEEE;
   --titlebar-text-color: #535B63;
-  --tab-container-background: #E8EAEC;
+  --tab-container-background: #EEEEEE;
   --tab-background-active: #FAFAF7;
   --tab-text-color-active: #31353A;
-  --tab-outline-color: #DDE0E3;
-  --ribbon-background: #F1F2F3;
-  --ribbon-background-collapsed: #F1F2F3;
+  --tab-outline-color: #DDDEDE;
+  --ribbon-background: #F3F3F3;
+  --ribbon-background-collapsed: #F3F3F3;
   --icon-color: #79838B;
   --icon-color-hover: #515A63;
-  --icon-color-active: #B65D63;
-  --text-selection: #F1DCDF;
+  --icon-color-active: #B35F62;
+  --text-selection: #F3DCDD;
   --text-highlight-bg: #FFF0C8;
-  --link-color: #B65D63;
+  --link-color: #B35F62;
   --link-color-hover: #A24D55;
-  --checkbox-color: #C97073;
-  --list-marker-color: #D58B8E;
-  --list-marker-color-hover: #C97073;
-  --list-marker-color-collapsed: #D58B8E;
+  --checkbox-color: #D78381;
+  --list-marker-color: #D69B9A;
+  --list-marker-color-hover: #D78381;
+  --list-marker-color-collapsed: #D69B9A;
   --table-background: #FAFAF7;
-  --table-header-background: #ECEEF0;
-  --table-row-alt-background: #F4F5F5;
+  --table-header-background: #E7E9E7;
+  --table-row-alt-background: #F3F4F2;
   --table-row-background-hover: #EDEFF0;
-  --table-border-color: #DDE0E3;
-  --h1-color: #B65D63;
+  --table-border-color: #DDDEDE;
+  --h1-color: #B35F62;
   --h2-color: #BC656B;
   --h3-color: #C17479;
   --h4-color: #C17A7D;
@@ -286,4 +286,125 @@ body:not(.is-mobile) .titlebar-button.mod-close:focus-visible svg {
     --anim-duration-fast: 0ms;
     --anim-duration-moderate: 0ms;
   }
+}
+
+/* --------------------------------------------------------------------------
+   Cupertino Soft v0.3.0: Obsidian-default shell, coral accents and statistical
+   grid tables. Pure CSS decoration; no window/tab/sidebar sizing overrides.
+   -------------------------------------------------------------------------- */
+.theme-light {
+  --soft-metadata: #F6F6F3;
+  --soft-metadata-border: #E9EAE6;
+  --soft-selection: #F5E5E5;
+  --soft-selection-hover: #F1DDDD;
+  --soft-grid: #D5D8D6;
+  --soft-table-head: #E8EAE8;
+  --soft-row-alt: #F3F4F2;
+  --metadata-property-background: #F6F6F3;
+  --metadata-property-background-hover: #EEEEEB;
+  --metadata-label-background-hover: #EEEEEB;
+  --table-border-width: 1px;
+  --table-header-border-width: 1px;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-row-last-border-width: 1px;
+  --table-row-alt-background: #F3F4F2;
+  --table-header-background: #E8EAE8;
+  --table-border-color: #D5D8D6;
+  --nav-item-background-active: #F5E5E5;
+  --nav-item-background-hover: #F3EEEE;
+  --text-accent: #B35F62;
+  --interactive-accent: #D78381;
+  --text-normal: #303438;
+  --link-color: #B35F62;
+  --list-marker-color: #D69B9A;
+}
+.theme-dark {
+  --soft-metadata: #303234;
+  --soft-metadata-border: #424649;
+  --soft-selection: #503A3D;
+  --soft-selection-hover: #5D4145;
+  --soft-grid: #505458;
+  --soft-table-head: #3D4144;
+  --soft-row-alt: #303438;
+  --metadata-property-background: #303234;
+  --metadata-property-background-hover: #3B3F42;
+  --table-border-width: 1px;
+  --table-header-border-width: 1px;
+  --table-row-alt-background: #303438;
+  --table-header-background: #3D4144;
+  --table-border-color: #505458;
+}
+/* Coral highlights for selected folders, files, and workspace tab text.
+   Selection remains dark-on-pale; icons and tab structure remain native. */
+.theme-light .nav-file-title.is-active,
+.theme-light .nav-folder-title.is-active {
+  background-color: var(--soft-selection);
+  border-inline-start: 2px solid #D78381;
+  color: #823F45;
+}
+.theme-light .nav-file-title.is-active:hover,
+.theme-light .nav-folder-title.is-active:hover {
+  background-color: var(--soft-selection-hover);
+}
+.theme-light .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: #A5545C;
+}
+/* Native Obsidian properties/frontmatter, slightly cooler than Soft Paper. */
+.theme-light .metadata-container,
+.theme-dark .metadata-container {
+  background: var(--soft-metadata);
+  border: 1px solid var(--soft-metadata-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-block: 10px 18px;
+}
+.theme-light .metadata-property,
+.theme-dark .metadata-property {
+  background-color: var(--metadata-property-background);
+}
+.theme-light .metadata-container .metadata-property:hover,
+.theme-dark .metadata-container .metadata-property:hover {
+  background-color: var(--metadata-property-background-hover);
+}
+/* Statistical-grid tables: thin rules on every cell, shaded header and very
+   subtle alternating rows (including Obsidian Live Preview table widgets). */
+.theme-light .markdown-rendered table,
+.theme-dark .markdown-rendered table,
+.markdown-source-view.mod-cm6 .cm-table-widget table {
+  border-collapse: collapse;
+  border: 1px solid var(--soft-grid);
+  --table-border-color: var(--soft-grid);
+  --table-header-background: var(--soft-table-head);
+  --table-row-alt-background: var(--soft-row-alt);
+  --table-row-background-hover: var(--soft-selection);
+}
+.markdown-rendered table :is(th,td),
+.markdown-source-view.mod-cm6 .cm-table-widget table :is(th,td) {
+  border: 1px solid var(--soft-grid);
+  padding: 6px 9px;
+  vertical-align: top;
+}
+.markdown-rendered table thead th,
+.markdown-source-view.mod-cm6 .cm-table-widget table thead th {
+  background-color: var(--soft-table-head);
+  font-weight: 600;
+}
+.markdown-rendered table tbody tr:nth-child(even) > *,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:nth-child(even) > * {
+  background-color: var(--soft-row-alt);
+}
+.markdown-rendered table tbody tr:hover > *,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:hover > * {
+  background-color: var(--soft-selection);
+}
+/* Highlight standard Markdown markers without altering citation keys. */
+.theme-light .markdown-source-view.mod-cm6 :is(.cm-formatting,.cm-formatting-link,.cm-formatting-quote,.cm-formatting-list),
+.theme-light .markdown-source-view.mod-cm6 :is(.cm-citation,.cm-pandoc-citation,.cm-zotero-citation),
+.theme-light .markdown-rendered :is(.citation,.pandoc-citation,.zotero-citation) {
+  color: #B35F62;
+}
+.theme-light .markdown-rendered :is(h1,h2,h3,h4),
+.theme-light .markdown-source-view.mod-cm6 :is(.HyperMD-header-1,.HyperMD-header-2,.HyperMD-header-3,.HyperMD-header-4) .cm-header {
+  color: #B35F62;
 }

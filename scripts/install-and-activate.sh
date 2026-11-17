@@ -28,7 +28,7 @@ if [[ "$MODE" == "install" ]]; then
   command -v python3 >/dev/null || { echo "Error: python3 is required" >&2; exit 2; }
   TMP="$(mktemp -d)"
   trap 'rm -rf "$TMP"' EXIT
-  BASE="https://raw.githubusercontent.com/vict0rg/obsidian-cupertino-soft-theme/main"
+  BASE="https://raw.githubusercontent.com/vict0rg/cupertino-obsidian-soft-theme/main"
   for file in theme.css manifest.json; do
     curl --fail --silent --show-error --location --retry 3 "$BASE/$file" -o "$TMP/$file"
     test -s "$TMP/$file"
