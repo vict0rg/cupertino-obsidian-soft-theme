@@ -28,6 +28,23 @@ On Linux, clone or download this repository and run `bash scripts/install-cupert
 
 To return to an older theme, simply choose it in Appearance. The files are separate from your notes.
 
+## Recover the theme without Obsidian menus (Linux)
+
+If a theme has hidden the Settings icon or window menus, **close Obsidian completely** and use the [install-and-activate script](scripts/install-and-activate.sh). It downloads the current `theme.css` and `manifest.json`, creates a dated backup of `.obsidian/appearance.json`, and changes **only** the `cssTheme` setting. Your notes, enabled snippets, plugins and other preferences are preserved.
+
+```bash
+curl -fL https://raw.githubusercontent.com/vict0rg/obsidian-cupertino-soft-theme/main/scripts/install-and-activate.sh -o ~/Downloads/obsidian-cupertino-soft-installer.sh
+bash ~/Downloads/obsidian-cupertino-soft-installer.sh
+```
+
+If you still cannot use the interface, close Obsidian and revert to the standard theme without deleting anything:
+
+```bash
+bash ~/Downloads/obsidian-cupertino-soft-installer.sh --reset
+```
+
+The default vault path is `~/Dropbox/500-OBSIDIAN`; provide a different vault path as the first argument if needed. The normal Obsidian Settings shortcut is **Ctrl+,** (or Command Palette **Ctrl+P → Open settings**). If existing snippets hide controls independently of the theme, disable those conflicting snippets in Appearance after restoring access.
+
 ## Shared visual palette
 
 | Purpose | Color |
