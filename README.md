@@ -4,14 +4,16 @@ A warm, reading-focused **Obsidian theme** built as a fork of [Cupertino](https:
 
 **Companion theme:** [Cupertino Cream for Zotero](https://github.com/vict0rg/cupertino-cream-for-zotero) — recommended for a visually consistent research workflow across notes and PDFs.
 
-> **v0.1.0 preview:** This theme is available for manual installation. It has **not yet been accepted into Obsidian's Community Themes directory**, and visual compatibility remains under testing.
+> **v0.1.1 preview:** This theme is available for manual installation. It has **not yet been accepted into Obsidian's Community Themes directory**, and visual compatibility remains under testing.
 
 ## Design principles
 
-- **Calm paper surfaces:** warm cream notes instead of bright white, and coordinated sand-colored panels.
+- **Calm paper surfaces:** a brighter ivory-letter-paper note surface, slightly lighter than Typewriter's paper, and coordinated sand-colored panels.
 - **A single restrained red accent:** Cupertino red is used for active-item markers, heading rules and focused controls, not large blocks of text.
-- **Better heading hierarchy:** H1/H2 have a left red marker and a delicate underline; H3/H4 use thinner markers. Applied in both Reading and Live Preview modes.
+- **Better heading hierarchy:** H1/H2 have glyph-height coral markers and delicate underlines; H3/H4 use smaller bars. The marker no longer extends down the entire editor line.
 - **No graph-paper grid** in the editor or reading view.
+- **Readable tables:** subtle alternating ivory rows and softened borders in Reading and Live Preview.
+- **List markers:** small muted coral bullets instead of gray.
 - **Light and dark variants** following the same visual language.
 - **No remote fonts, images or scripts:** the CSS is based on the MIT-licensed Cupertino source and our appended design overrides.
 
@@ -19,19 +21,28 @@ A warm, reading-focused **Obsidian theme** built as a fork of [Cupertino](https:
 
 | Role | Color |
 | --- | --- |
-| Note paper | `#FFFDF9` |
-| PDF Soft Cream companion preset | `#F7F1E5` |
-| Sidebars | `#F3EDE5` |
-| Toolbars | `#EEE5DC` |
+| Note paper / PDF Soft Cream | `#FFF9EC` |
+| Table alternate row | `#F8F1E3` |
+| Sidebars | `#F4F0E4` |
+| Toolbars | `#F6EFDE` |
 | Main text | `#332E2B` |
-| Cupertino red | `#FF3B30` |
+| Cupertino red / soft marker | `#FF3B30` / `#DF7169` |
 | Selected item | `#F8E3E0` |
+
+## v0.1.1 reading refinements
+
+- Less brown, more luminous ivory paper, inspired by vintage American letter-writing stationery.
+- Shortened heading markers so the bar follows the font size rather than the height of the entire CodeMirror line.
+- Matching coral bullet dots and gentle alternating table rows.
+- Same paper color as the Zotero companion's **Soft Cream** reader preset.
+
+The **Typewriter** ([GPL-3.0](https://github.com/crashmoney/obsidian-typewriter)) light palette, **Shimmering Focus** ([MIT](https://github.com/chrisgrieser/shimmering-focus)) table striping, and **Olivier's Theme** ([MIT](https://github.com/OlivierPS/Olivier-s-Theme)) reading typography were reviewed as references only. Their source CSS was **not** copied.
 
 ## Manual installation
 
 Until the theme is accepted into Obsidian's catalog:
 
-1. Download both **`theme.css`** and **`manifest.json`** from the [v0.1.0 GitHub Release](https://github.com/vict0rg/obsidian-cupertino-cream/releases/tag/0.1.0).
+1. Download both **`theme.css`** and **`manifest.json`** from the [v0.1.1 GitHub Release](https://github.com/vict0rg/obsidian-cupertino-cream/releases/tag/0.1.1).
 2. In your vault create `.obsidian/themes/Cupertino Cream/`.
 3. Copy **both files** into that folder.
 4. In Obsidian open **Settings → Appearance → Themes**, reload the themes if needed and select **Cupertino Cream**.

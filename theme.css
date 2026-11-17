@@ -7386,240 +7386,311 @@ body.mod-linux:not(.is-android):not(.adaptive-mode-off).theme-dark {
   --color-pink: #d561aa;
 }
 
-
-/* ============================================================================
-   Cupertino Cream for Obsidian — original derivative palette v0.1.0
-   Core theme: Cupertino by svnaxis (MIT) — full upstream copyright retained.
-   Visual inspiration: Notation by deathau (The Unlicense), no source copied.
-   Companion: https://github.com/vict0rg/cupertino-cream-for-zotero
-
-   Shared design tokens:
-     Paper #FFFDF9 | Soft Cream #F7F1E5 | Sidebar #F3EDE5
-     Toolbar #EEE5DC | Ink #332E2B | Accent #FF3B30
-   The focus is high legibility and restrained accents; no paper grid.
-   ============================================================================ */
+/* =========================================================================
+   CUPERTINO CREAM v0.1.1 — WARM LETTER-PAPER DESIGN
+   Derived from Cupertino for Obsidian (svnaxis, MIT).
+   Typewriter (GPL-3.0), Shimmering Focus (MIT) and Olivier's Theme (MIT)
+   were examined only for design ideas. No source code was copied.
+   Color tokens match Cupertino Cream for Zotero v0.3.2.
+   ========================================================================= */
 body {
-  --cupertino-cream-ink: #332E2B;
-  --cupertino-cream-muted: #776F68;
-  --cupertino-cream-red: #FF3B30;
-  --cupertino-cream-red-ink: #AC3833;
-  --cupertino-cream-red-wash: #F8E3E0;
-  --cupertino-cream-page: #FFFDF9;
-  --cupertino-cream-paper: #F7F1E5;
-  --cupertino-cream-nav: #F3EDE5;
-  --cupertino-cream-toolbar: #EEE5DC;
-  --cupertino-cream-rule: #E5D7CA;
+  --cc-paper: #FFF9EC;
+  --cc-panel: #F4F0E4;
+  --cc-toolbar: #F6EFDE;
+  --cc-table-alt: #F8F1E3;
+  --cc-table-head: #F1EBDC;
+  --cc-rule: #E9DECA;
+  --cc-ink: #332E2B;
+  --cc-muted: #756B62;
+  --cc-red: #FF3B30;
+  --cc-marker: #DF7169;
+  --cc-accent-ink: #A63D36;
+  --cc-red-wash: #FAE5DE;
+  --cupertino-cream-ink: var(--cc-ink);
+  --cupertino-cream-muted: var(--cc-muted);
+  --cupertino-cream-red: var(--cc-red);
+  --cupertino-cream-red-ink: var(--cc-accent-ink);
+  --cupertino-cream-red-wash: var(--cc-red-wash);
+  --cupertino-cream-page: var(--cc-paper);
+  --cupertino-cream-paper: var(--cc-paper);
+  --cupertino-cream-nav: var(--cc-panel);
+  --cupertino-cream-toolbar: var(--cc-toolbar);
+  --cupertino-cream-rule: var(--cc-rule);
 }
 body.theme-light,
 body.mod-linux:not(.is-android):not(.adaptive-mode-off).theme-light {
-  --background-primary: #FFFDF9;
-  --background-primary-alt: #FBF7F1;
-  --background-secondary: #F3EDE5;
-  --background-secondary-alt: #EEE5DC;
-  --background-modifier-border: #E5D7CA;
-  --background-modifier-border-hover: #D5C0B2;
-  --background-modifier-hover: rgba(114, 77, 61, 0.055);
-  --background-modifier-active-hover: rgba(114, 77, 61, 0.09);
-  --background-modifier-form-field: #FFFDF9;
-  --background-modifier-box-shadow: rgba(62, 44, 31, 0.08);
-  --color-base-00: #FFFDF9;
-  --color-base-05: #FEFCF8;
-  --color-base-10: #FBF7F1;
-  --color-base-20: #F7F1E5;
-  --color-base-25: #F3EDE5;
-  --color-base-30: #EEE5DC;
-  --color-base-35: #E7DDD2;
-  --color-base-40: #DCD0C3;
-  --color-base-50: #B9A99C;
-  --color-base-60: #8B7F76;
-  --color-base-70: #73675F;
+  --background-primary: #FFF9EC;
+  --background-primary-alt: #FCF5E7;
+  --background-secondary: #F4F0E4;
+  --background-secondary-alt: #F6EFDE;
+  --background-modifier-border: #E9DECA;
+  --background-modifier-border-hover: #D7C7AD;
+  --background-modifier-hover: rgba(104,81,55,0.055);
+  --background-modifier-active-hover: rgba(104,81,55,0.08);
+  --background-modifier-form-field: #FFF9EC;
+  --color-base-00: #FFF9EC;
+  --color-base-05: #FEF8EA;
+  --color-base-10: #FCF5E7;
+  --color-base-20: #F8F1E3;
+  --color-base-25: #F4F0E4;
+  --color-base-30: #F6EFDE;
+  --color-base-35: #E9DECA;
+  --color-base-40: #D7C7AD;
+  --color-base-50: #B1A28D;
+  --color-base-60: #8B7E6F;
+  --color-base-70: #756B62;
   --color-base-100: #332E2B;
   --text-normal: #332E2B;
-  --text-muted: #776F68;
-  --text-faint: #978A80;
-  --text-accent: #AC3833;
-  --text-accent-hover: #922E2B;
+  --text-muted: #756B62;
+  --text-faint: #968778;
+  --text-accent: #A63D36;
+  --text-accent-hover: #8C302B;
   --text-on-accent: #FFFFFF;
-  --interactive-accent: #CB433B;
-  --interactive-accent-hover: #B83833;
-  --interactive-normal: #FBF7F1;
-  --interactive-hover: #F3EDE5;
-  --nav-item-color: #554B45;
+  --interactive-accent: #C9544A;
+  --interactive-accent-hover: #AC433A;
+  --interactive-normal: #FCF5E7;
+  --interactive-hover: #F4F0E4;
+  --nav-item-color: #514A43;
   --nav-item-color-active: #332E2B;
-  --nav-item-background-active: #F8E3E0;
-  --nav-item-background-hover: #EBE0D5;
-  --titlebar-background: #EEE5DC;
-  --titlebar-background-focused: #EEE5DC;
-  --titlebar-text-color: #554B45;
-  --tab-container-background: #EEE5DC;
+  --nav-item-background-active: #FAE5DE;
+  --nav-item-background-hover: #EEE7D8;
+  --titlebar-background: #F6EFDE;
+  --titlebar-background-focused: #F6EFDE;
+  --titlebar-text-color: #514A43;
+  --tab-container-background: #F6EFDE;
   --tab-text-color-active: #332E2B;
-  --tab-outline-color: #E5D7CA;
-  --icon-color: #75675E;
-  --icon-color-hover: #AC3833;
-  --icon-color-active: #AC3833;
-  --text-selection: #F5D8D3;
-  --text-highlight-bg: #FFF1C4;
-  --background-primary: #FFFDF9;
+  --tab-outline-color: #E9DECA;
+  --icon-color: #74685A;
+  --icon-color-hover: #A63D36;
+  --icon-color-active: #A63D36;
+  --text-selection: #F8DAD2;
+  --text-highlight-bg: #FFF0C5;
+  --link-color: #A63D36;
+  --link-color-hover: #8C302B;
+  --checkbox-color: #C9544A;
+  --list-marker-color: #D46A60;
+  --list-marker-color-hover: #FF3B30;
+  --list-marker-color-collapsed: #D46A60;
+  --table-background: #FFF9EC;
+  --table-header-background: #F1EBDC;
+  --table-row-alt-background: #F8F1E3;
+  --table-row-background-hover: #F4E8D0;
+  --table-border-color: #E9DECA;
   --h1-color: #332E2B;
-  --h2-color: #40342E;
-  --h3-color: #5D453B;
-  --h4-color: #55443B;
-  --h5-color: #66564B;
-  --h6-color: #776F68;
+  --h2-color: #403831;
+  --h3-color: #584B3E;
+  --h4-color: #55483D;
+  --h5-color: #63574B;
+  --h6-color: #756B62;
 }
 body.theme-dark,
 body.mod-linux:not(.is-android):not(.adaptive-mode-off).theme-dark {
-  --cupertino-cream-ink: #F0E8E0;
-  --cupertino-cream-muted: #C1AFA1;
-  --cupertino-cream-red: #FF8179;
-  --cupertino-cream-red-ink: #FF958D;
-  --cupertino-cream-red-wash: rgba(255,129,121,0.17);
-  --cupertino-cream-page: #262321;
-  --cupertino-cream-paper: #302B28;
-  --cupertino-cream-nav: #302B28;
-  --cupertino-cream-toolbar: #38312D;
-  --cupertino-cream-rule: #51443D;
-  --background-primary: #262321;
-  --background-primary-alt: #2C2724;
-  --background-secondary: #302B28;
-  --background-secondary-alt: #38312D;
-  --background-modifier-border: #51443D;
+  --cc-paper: #272520;
+  --cc-panel: #302F28;
+  --cc-toolbar: #39362D;
+  --cc-table-alt: #302C26;
+  --cc-table-head: #443D31;
+  --cc-rule: #51483D;
+  --cc-ink: #F3E9D9;
+  --cc-muted: #C6B7A4;
+  --cc-red: #FF8179;
+  --cc-marker: #EF958C;
+  --cc-accent-ink: #FFAAA0;
+  --cc-red-wash: rgba(255,129,121,0.17);
+  --background-primary: #272520;
+  --background-primary-alt: #2C2923;
+  --background-secondary: #302F28;
+  --background-secondary-alt: #39362D;
+  --background-modifier-border: #51483D;
   --background-modifier-border-hover: #6C5B51;
-  --background-modifier-hover: rgba(245,235,224,0.06);
-  --background-modifier-active-hover: rgba(245,235,224,0.10);
-  --color-base-00: #262321;
-  --color-base-05: #292522;
-  --color-base-10: #2C2724;
-  --color-base-20: #302B28;
-  --color-base-25: #342E2A;
-  --color-base-30: #38312D;
-  --color-base-35: #423831;
-  --color-base-40: #51443D;
-  --color-base-50: #736256;
-  --color-base-60: #978578;
-  --color-base-70: #C1AFA1;
-  --color-base-100: #F0E8E0;
-  --text-normal: #F0E8E0;
-  --text-muted: #C1AFA1;
-  --text-faint: #96877C;
-  --text-accent: #FF958D;
-  --text-accent-hover: #FFB3AD;
-  --text-on-accent: #262321;
-  --interactive-accent: #D46B62;
-  --interactive-accent-hover: #E67A70;
-  --interactive-normal: #38312D;
-  --interactive-hover: #423831;
-  --nav-item-color: #D8CEC4;
-  --nav-item-color-active: #FFF3E7;
+  --color-base-00: #272520;
+  --color-base-10: #2C2923;
+  --color-base-20: #302C26;
+  --color-base-25: #343128;
+  --color-base-30: #39362D;
+  --color-base-40: #51483D;
+  --color-base-50: #79695B;
+  --color-base-60: #998B7C;
+  --color-base-70: #C6B7A4;
+  --color-base-100: #F3E9D9;
+  --text-normal: #F3E9D9;
+  --text-muted: #C6B7A4;
+  --text-faint: #9F9283;
+  --text-accent: #FFAAA0;
+  --text-accent-hover: #FFCEC6;
+  --text-on-accent: #272520;
+  --interactive-accent: #D66D64;
+  --interactive-accent-hover: #E98176;
+  --interactive-normal: #39362D;
+  --interactive-hover: #443D31;
+  --nav-item-color: #DACFBF;
+  --nav-item-color-active: #FFF3E0;
   --nav-item-background-active: #503A35;
-  --nav-item-background-hover: #403630;
-  --titlebar-background: #38312D;
-  --titlebar-background-focused: #38312D;
-  --tab-container-background: #38312D;
-  --tab-text-color-active: #F0E8E0;
-  --tab-outline-color: #51443D;
-  --icon-color: #C1AFA1;
-  --icon-color-hover: #FF958D;
-  --icon-color-active: #FF958D;
-  --text-selection: rgba(255,129,121,0.20);
-  --text-highlight-bg: #63502D;
-  --h1-color: #F0E8E0;
-  --h2-color: #EADDD1;
-  --h3-color: #DCC8B8;
-  --h4-color: #D9C7B8;
-  --h5-color: #CCBCAE;
-  --h6-color: #C1AFA1;
+  --nav-item-background-hover: #443D31;
+  --titlebar-background: #39362D;
+  --titlebar-background-focused: #39362D;
+  --tab-container-background: #39362D;
+  --tab-text-color-active: #F3E9D9;
+  --tab-outline-color: #51483D;
+  --icon-color: #C6B7A4;
+  --icon-color-hover: #FFAAA0;
+  --icon-color-active: #FFAAA0;
+  --text-selection: rgba(255,129,121,0.2);
+  --text-highlight-bg: #65532E;
+  --link-color: #FFAAA0;
+  --link-color-hover: #FFCEC6;
+  --checkbox-color: #D66D64;
+  --list-marker-color: #EF958C;
+  --list-marker-color-hover: #FFB5AC;
+  --list-marker-color-collapsed: #EF958C;
+  --table-background: #272520;
+  --table-header-background: #443D31;
+  --table-row-alt-background: #302C26;
+  --table-row-background-hover: #443D31;
+  --table-border-color: #51483D;
+  --h1-color: #F3E9D9;
+  --h2-color: #EADFCF;
+  --h3-color: #DCCDBA;
+  --h4-color: #D9C8B7;
+  --h5-color: #C6B7A4;
+  --h6-color: #C6B7A4;
 }
-/* Warm surfaces in sidebars, source editor, modals and tab/header chrome. */
-body.theme-light .workspace-tabs .workspace-leaf,
+/* Clear paper surfaces: avoid texture grids, keep sidebars distinct. */
 body.theme-light .workspace-leaf-content[data-type="markdown"] .view-content,
+body.theme-light .workspace-split.mod-root .workspace-leaf,
 body.theme-light .markdown-source-view,
 body.theme-light .markdown-reading-view {
-  background-color: var(--background-primary);
+  background-color: var(--cc-paper) !important;
 }
-body.theme-light .workspace-sidedock-vault-profile,
 body.theme-light .workspace-ribbon,
 body.theme-light .workspace-tab-header-container,
 body.theme-light .titlebar {
-  background-color: var(--background-secondary-alt);
+  background-color: var(--cc-toolbar) !important;
 }
 body.theme-light .workspace-split.mod-left-split,
 body.theme-light .workspace-split.mod-right-split,
 body.theme-light .nav-files-container {
-  background-color: var(--background-secondary);
+  background-color: var(--cc-panel) !important;
 }
-body.theme-light .markdown-source-view .cm-scroller,
-body.theme-light .markdown-reading-view,
-body.theme-dark .markdown-source-view .cm-scroller,
-body.theme-dark .markdown-reading-view {
-  background-image: none;
+body .markdown-source-view .cm-scroller,
+body .markdown-reading-view {
+  background-image: none !important;
 }
-body.theme-light .mod-root .workspace-tab-header.is-active,
-body.theme-light .nav-file-title.is-active,
-body.theme-light .nav-folder-title.is-active {
-  background-color: var(--cupertino-cream-red-wash);
+body .nav-file-title.is-active,
+body .nav-folder-title.is-active {
+  background-color: var(--cc-red-wash) !important;
+  border-inline-start: 3px solid var(--cc-marker);
 }
-/* A restrained red selection marker inspired by Cupertino's own accent. */
-body:not(.is-mobile) .nav-file-title.is-active,
-body:not(.is-mobile) .nav-folder-title.is-active {
-  border-inline-start: 3px solid var(--cupertino-cream-red);
-}
-/* Reading view headings: a quiet left accent + a short underlined title.
-   Heading text stays dark for readability; only the rule is red. */
+/* Compact, glyph-sized heading accents. No full-line borders. */
 .markdown-rendered h1,
 .markdown-rendered h2,
 .markdown-rendered h3,
 .markdown-rendered h4 {
   position: relative;
-  color: var(--cupertino-cream-ink);
-  border-inline-start: 3px solid var(--cupertino-cream-red);
+  border-inline-start: 0 !important;
   padding-inline-start: 0.65em;
+  color: var(--cc-ink);
 }
+.markdown-rendered h1::before,
+.markdown-rendered h2::before,
+.markdown-rendered h3::before,
+.markdown-rendered h4::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.17em;
+  width: 3px;
+  height: 0.92em;
+  background-color: var(--cc-marker);
+  border-radius: 3px;
+  pointer-events: none;
+}
+.markdown-rendered h3::before,
+.markdown-rendered h4::before { width: 2px; height: 0.78em; top: 0.22em; }
 .markdown-rendered h1,
 .markdown-rendered h2 {
-  text-decoration-line: underline;
-  text-decoration-color: color-mix(in srgb, var(--cupertino-cream-red) 55%, transparent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--cc-marker) 65%, transparent);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.22em;
 }
-.markdown-rendered h3,
-.markdown-rendered h4 {
-  border-inline-start-width: 2px;
-  border-inline-start-color: color-mix(in srgb, var(--cupertino-cream-red) 60%, transparent);
-}
-/* Live preview and source headings share the same navigation markers. */
+/* CodeMirror 6: markers must match the heading's font, not the whole editor row. */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
-  border-inline-start: 3px solid var(--cupertino-cream-red);
+  position: relative;
+  border-inline-start: 0 !important;
   padding-inline-start: 0.65em;
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1::before,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2::before,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3::before,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.17em;
+  width: 3px;
+  height: 0.92em;
+  background: var(--cc-marker);
+  border-radius: 3px;
+  pointer-events: none;
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3::before,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4::before {
+  width: 2px;
+  height: 0.78em;
+  top: 0.22em;
 }
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 .cm-header,
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 .cm-header {
-  text-decoration-line: underline;
-  text-decoration-color: color-mix(in srgb, var(--cupertino-cream-red) 55%, transparent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--cc-marker) 65%, transparent);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.22em;
 }
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
-  border-inline-start-width: 2px;
-  border-inline-start-color: color-mix(in srgb, var(--cupertino-cream-red) 60%, transparent);
+/* Bullets and list indent guides in coordinated dusty coral. */
+.markdown-rendered ul > li::marker,
+.markdown-reading-view ul > li::marker {
+  color: var(--cc-marker);
 }
-/* Keep links and checkboxes subtle; retain semantic coloring for callouts. */
-body.theme-light {
-  --link-color: #A43A34;
-  --link-color-hover: #872E2A;
-  --checkbox-color: #CB433B;
+.markdown-source-view.mod-cm6 .cm-formatting-list,
+.markdown-source-view.mod-cm6 .cm-list-1 .cm-formatting-list,
+.markdown-source-view.mod-cm6 .cm-list-2 .cm-formatting-list {
+  color: var(--cc-marker);
 }
-body.theme-dark {
-  --link-color: #FF9C95;
-  --link-color-hover: #FFC1BA;
-  --checkbox-color: #D46B62;
+/* Zebra tables in reading mode, rendered Live Preview tables, and table widgets. */
+.markdown-rendered table,
+.markdown-source-view.mod-cm6 .cm-table-widget table {
+  --table-background: var(--cc-paper);
+  --table-row-alt-background: var(--cc-table-alt);
+  --table-header-background: var(--cc-table-head);
+  --table-border-color: var(--cc-rule);
+  border-color: var(--cc-rule);
+}
+.markdown-rendered table thead th,
+.markdown-source-view.mod-cm6 .cm-table-widget table thead th {
+  background-color: var(--cc-table-head) !important;
+  color: var(--cc-ink);
+  border-color: var(--cc-rule);
+}
+.markdown-rendered table tbody tr:nth-child(odd) > *,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:nth-child(odd) > * {
+  background-color: var(--cc-paper) !important;
+}
+.markdown-rendered table tbody tr:nth-child(even) > *,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:nth-child(even) > * {
+  background-color: var(--cc-table-alt) !important;
+}
+.markdown-rendered table tbody td,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody td {
+  border-color: var(--cc-rule) !important;
+}
+.markdown-rendered table tbody tr:hover > *,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:hover > * {
+  background-color: color-mix(in srgb, var(--cc-table-alt) 78%, var(--cc-marker)) !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  body {
-    --anim-speed-modifier: 0;
-  }
+  body { --anim-speed-modifier: 0; }
 }

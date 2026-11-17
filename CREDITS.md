@@ -31,3 +31,11 @@ Maintainer: [vict0rg](https://github.com/vict0rg).
 New source: appended palette, warm surface definitions, heading accents, navigation selection styling, release packaging and English documentation. These contributions are distributed under the MIT License, while the original upstream copyright and notices remain intact.
 
 The repository is a GitHub fork and is independent of Obsidian and all upstream creators. No third-party logo or brand endorsement is implied.
+
+## Additional study references for v0.1.1 (no source reuse)
+
+- [Typewriter](https://github.com/crashmoney/obsidian-typewriter) by crashmoney, **GPL-3.0**: its light paper aesthetic was considered. **No CSS or font assets copied.**
+- [Shimmering Focus](https://github.com/chrisgrieser/shimmering-focus) by Chris Grieser, **MIT**: alternating table rows inspired our independently written table rules. **No CSS copied.**
+- [Olivier's Theme](https://github.com/OlivierPS/Olivier-s-Theme) by OlivierPS, **MIT**: typographic comfort and paper presentation studied. **No source code copied.**
+
+The theme remains derived solely from the upstream MIT Cupertino source plus original changes.

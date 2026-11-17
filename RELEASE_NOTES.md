@@ -1,14 +1,14 @@
-# Cupertino Cream for Obsidian 0.1.0
+# Cupertino Cream for Obsidian v0.1.1 — Letter Paper
 
-First community preview of an independently branded **MIT-licensed fork of Cupertino for Obsidian**.
+An iterative refinement to the shared **Cupertino Cream** visual identity.
 
-- Reading-focused warm creams and paper tones inspired by Notation's design direction
-- Small Cupertino-red focus accents, with a subtle marker and underline for H1/H2
-- Compact H3/H4 markers in Reading and Live Preview
-- Coordinated light and dark palettes, no paper grid
-- Links to companion [Cupertino Cream for Zotero](https://github.com/vict0rg/cupertino-cream-for-zotero)
-- Full copyright attribution in LICENSE, NOTICE.md and CREDITS.md
+- Warm, lighter ivory note background: `#FFF9EC`, a little lighter and less brown than Typewriter.
+- Matching companion **[Cupertino Cream for Zotero v0.3.2](https://github.com/vict0rg/cupertino-cream-for-zotero)** using the same Soft Cream PDF preset.
+- Heading markers use **glyph-sized short bars** in Live Preview and Reading rather than full line-height borders.
+- Bullets and list markers use a soft coral tint.
+- Alternating table rows and a muted header color improve scanning without strong gridlines.
+- Original Cupertino (MIT) remains the licensed source. Typewriter (GPL-3.0), Shimmering Focus (MIT), and Olivier's Theme (MIT) served as **visual references only**, with no reused source.
 
-**Manual installation:** Download `manifest.json` and `theme.css` from this release and put both in your vault's `.obsidian/themes/Cupertino Cream/`, then enable **Cupertino Cream** under Appearance.
+**Installation:** place `theme.css` and `manifest.json` from this release into `.obsidian/themes/Cupertino Cream/` and select the theme in Obsidian Appearance.
 
-**Directory status:** Not yet approved or listed in Obsidian's Community Themes. Real screenshot and owner-authenticated submission required.
+**Directory status:** Not yet published in the official Community Themes gallery.
