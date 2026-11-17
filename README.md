@@ -6,6 +6,12 @@ A neutral-gray, paper-focused Obsidian theme. The document surface is **Soft Pap
 
 > The in-app theme is named **Cupertino Soft** to follow Obsidian's guidance against redundant “Obsidian” wording in the gallery. Its full GitHub project title is **Obsidian Cupertino Soft Theme**.
 
+## v0.2.1: Safe, native window controls
+
+**Important repair:** the earlier version inherited thousands of lines of Cupertino layout CSS that could hide the Obsidian tab strip, menu/window controls, and side-panel icons on Linux. This version **replaces that layout-heavy source with a small, original, appearance-focused stylesheet**, while preserving the Soft Paper / gray / coral design. Obsidian's built-in layout now handles tabs, ribbons, headings and titlebar button sizing.
+
+Earlier versions remain in the repository's Git history, including the MIT-licensed Cupertino source. v0.2.1 has not yet been visually verified on all Linux desktop environments.
+
 ## Features
 
 - Soft Paper near-white writing surface (`#FAFAF7`), with **no grid**
@@ -63,11 +69,11 @@ The default vault path is `~/Dropbox/500-OBSIDIAN`; provide a different vault pa
 
 ## Community Themes submission
 
-**This theme is not yet listed in Obsidian → Appearance → Manage.** To get listed, a release tagged `0.2.0` must contain `theme.css` and `manifest.json` as attached files, a **real screenshot** must be added (recommended 512×288), and the owner must submit the theme via [Obsidian Community Directory](https://community.obsidian.md). Obsidian performs its own review. See [SUBMISSION.md](SUBMISSION.md).
+**This theme is not yet listed in Obsidian → Appearance → Manage.** To get listed, a release tagged `0.2.1` must contain `theme.css` and `manifest.json` as attached files, a **real screenshot** must be added (recommended 512×288), and the owner must submit the theme via [Obsidian Community Directory](https://community.obsidian.md). Obsidian performs its own review. See [SUBMISSION.md](SUBMISSION.md).
 
 ## Attribution and licensing
 
-**Cupertino for Obsidian** by [svnaxis](https://github.com/svnaxis/obsidian-cupertino) is the underlying source, reused and modified under the **MIT License**, with the original copyright notice and fork history retained.
+The repository is a fork of **Cupertino for Obsidian** by [svnaxis](https://github.com/svnaxis/obsidian-cupertino), licensed under **MIT**. Its historical commits and copyright notices remain. Beginning with v0.2.1, the layout-altering upstream CSS has been replaced with a new appearance-only stylesheet instead of continuing to distribute the old UI overrides. The current theme remains MIT-licensed.
 
 Additional design-only references: [Notation](https://github.com/deathau/Notation-for-Obsidian) (The Unlicense), [Typewriter](https://github.com/crashmoney/obsidian-typewriter) (GPL-3.0), [Shimmering Focus](https://github.com/chrisgrieser/shimmering-focus) (MIT), [Olivier's Theme](https://github.com/OlivierPS/Olivier-s-Theme) (MIT), and [Cupertino for Zotero](https://github.com/shenghuang-123/cupertino-for-zotero) (MIT). **No code, fonts, or assets from these design-only references were copied.** See [CREDITS.md](CREDITS.md), [NOTICE.md](NOTICE.md), and [LICENSE](LICENSE).
 

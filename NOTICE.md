@@ -1,6 +1,6 @@
 # Copyright and third-party notices
 
-**Cupertino for Obsidian** — Copyright (c) 2026 svnaxis; MIT. Base source and design components reused under the complete copyright and permission text retained in [LICENSE](LICENSE) and [LICENSE.txt](LICENSE.txt).
+**Cupertino for Obsidian** — Copyright (c) 2026 svnaxis; MIT. The original MIT source and earlier adaptations are preserved in this fork's Git history, along with the copyright and permission notices in [LICENSE](LICENSE) and [LICENSE.txt](LICENSE.txt). The current v0.2.1 CSS replaces the inherited layout engine with newly written appearance-focused rules.
 
 **Obsidian Cupertino Soft Theme** — new CSS changes and documentation Copyright (c) 2026 vict0rg and contributors, to the extent applicable, under MIT terms.
 

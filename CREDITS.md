@@ -1,13 +1,13 @@
 # Credits and license compliance
 
-## Reused upstream source: Cupertino for Obsidian (MIT)
+## Fork origin and historical upstream source: Cupertino for Obsidian (MIT)
 
 - Author: **svnaxis** (Alexis C)
 - Repository: https://github.com/svnaxis/obsidian-cupertino
 - License: **MIT**; upstream copyright notice: Copyright (c) 2026 svnaxis
-- Reused: base `theme.css` and Cupertino UI implementation. This GitHub repository is an actual fork and retains the source history.
+- Historical versions reused the original Cupertino CSS and UI rules. The current v0.2.1 `theme.css` is a newly authored, minimal stylesheet that **does not retain the upstream layout-altering rules**. This repository is still a GitHub fork with complete source history.
 
-The original MIT copyright and permission notice remain intact in [LICENSE.txt](LICENSE.txt) and [LICENSE](LICENSE). All distributed derivative source carries the same MIT terms, including the original notice.
+The original MIT copyright and permission notice remain intact in [LICENSE.txt](LICENSE.txt) and [LICENSE](LICENSE). The repository continues to distribute the theme under MIT terms and retains the original source history and notices. Earlier upstream code remains accessible in Git history; the new v0.2.1 theme.css concentrates on original color and decoration rules.
 
 ## Design references — no source reuse
 
