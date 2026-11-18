@@ -1,5 +1,5 @@
 /*
- * CUPERTINO OBSIDIAN SOFT THEME v0.3.0
+ * CUPERTINO OBSIDIAN SOFT THEME v0.4.0
  * License: MIT. Maintainer: vict0rg (https://github.com/vict0rg)
  * This simplified stylesheet replaces legacy Cupertino layout manipulation
  * with restrained appearance-only CSS. It intentionally leaves window menus,
@@ -13,88 +13,88 @@
 
 .theme-light {
   color-scheme: light;
-  /* Soft Paper documents; pale Cupertino gray interface */
-  --soft-paper: #FAFAF7;
-  --soft-sidebar: #F3F3F3;
-  --soft-topbar: #EEEEEE;
-  --soft-border: #DDDEDE;
-  --soft-row-alt: #F3F4F2;
-  --soft-table-head: #E7E9E7;
-  --soft-ink: #31353A;
-  --soft-muted: #697179;
-  --soft-coral: #D78381;
-  --soft-coral-text: #B35F62;
-  --soft-coral-muted: #D69B9A;
+  /* Cupertino original gray chrome, nearly white writing surface. */
+  --soft-paper: #FAFAFA;
+  --soft-sidebar: #EBEBED;
+  --soft-topbar: #EBEBED;
+  --soft-border: #D9D9DE;
+  --soft-row-alt: #F5F5F6;
+  --soft-table-head: #EEEEF0;
+  --soft-ink: #333338;
+  --soft-muted: #6D6D75;
+  --soft-coral: #FF3B30;
+  --soft-coral-text: #FF3B30;
+  --soft-coral-muted: #D86760;
 
-  --background-primary: #FAFAF7;
-  --background-primary-alt: #F8F9F7;
-  --background-secondary: #F3F3F3;
-  --background-secondary-alt: #EEEEEE;
-  --background-modifier-border: #DDDEDE;
-  --background-modifier-border-hover: #C7CAC9;
-  --background-modifier-border-focus: #B8BFC5;
-  --background-modifier-form-field: #FAFAF7;
-  --background-modifier-hover: rgba(72, 82, 93, 0.055);
-  --background-modifier-active-hover: rgba(72, 82, 93, 0.09);
-  --background-modifier-message: #F3F3F3;
-  --color-base-00: #FAFAF7;
-  --color-base-05: #F9FAF8;
-  --color-base-10: #F8F9F7;
-  --color-base-20: #F3F4F2;
-  --color-base-25: #F3F3F3;
-  --color-base-30: #EEEEEE;
-  --color-base-35: #DFE2E5;
-  --color-base-40: #D2D6DA;
-  --color-base-50: #ACB3B9;
-  --color-base-60: #899199;
-  --color-base-70: #697179;
-  --color-base-100: #31353A;
-  --text-normal: #31353A;
-  --text-muted: #697179;
-  --text-faint: #969DA3;
-  --text-accent: #B35F62;
-  --text-accent-hover: #A24D55;
+  --background-primary: #FAFAFA;
+  --background-primary-alt: #F7F7F8;
+  --background-secondary: #EBEBED;
+  --background-secondary-alt: #F2F2F4;
+  --background-modifier-border: #D9D9DE;
+  --background-modifier-border-hover: #C7C7CE;
+  --background-modifier-border-focus: #B9B9C2;
+  --background-modifier-form-field: #FAFAFA;
+  --background-modifier-hover: rgba(51, 51, 56, 0.045);
+  --background-modifier-active-hover: rgba(51, 51, 56, 0.08);
+  --background-modifier-message: #F2F2F4;
+  --color-base-00: #FAFAFA;
+  --color-base-05: #F9F9FA;
+  --color-base-10: #F7F7F8;
+  --color-base-20: #F5F5F6;
+  --color-base-25: #F2F2F4;
+  --color-base-30: #EBEBED;
+  --color-base-35: #DEDEE2;
+  --color-base-40: #D0D0D6;
+  --color-base-50: #ABABB3;
+  --color-base-60: #96969E;
+  --color-base-70: #6D6D75;
+  --color-base-100: #333338;
+  --text-normal: #333338;
+  --text-muted: #6D6D75;
+  --text-faint: #96969E;
+  --text-accent: #FF3B30;
+  --text-accent-hover: #D92D23;
   --text-on-accent: #FFFFFF;
-  --interactive-accent: #D78381;
-  --interactive-accent-hover: #C47373;
-  --interactive-normal: #FAFAF7;
-  --interactive-hover: #F3F3F3;
-  --nav-item-color: #59616A;
-  --nav-item-color-hover: #31353A;
-  --nav-item-color-active: #31353A;
-  --nav-item-background-active: #F5E6E6;
-  --nav-item-background-hover: #F1E9E9;
-  --titlebar-background: #EEEEEE;
-  --titlebar-background-focused: #EEEEEE;
-  --titlebar-text-color: #535B63;
-  --tab-container-background: #EEEEEE;
-  --tab-background-active: #FAFAF7;
-  --tab-text-color-active: #31353A;
-  --tab-outline-color: #DDDEDE;
-  --ribbon-background: #F3F3F3;
-  --ribbon-background-collapsed: #F3F3F3;
-  --icon-color: #79838B;
-  --icon-color-hover: #515A63;
-  --icon-color-active: #B35F62;
-  --text-selection: #F3DCDD;
+  --interactive-accent: #FF3B30;
+  --interactive-accent-hover: #E9362D;
+  --interactive-normal: #FAFAFA;
+  --interactive-hover: #F2F2F4;
+  --nav-item-color: #6D6D75;
+  --nav-item-color-hover: #333338;
+  --nav-item-color-active: #333338;
+  --nav-item-background-active: #FFE9E8;
+  --nav-item-background-hover: #F7EEEE;
+  --titlebar-background: #EBEBED;
+  --titlebar-background-focused: #EBEBED;
+  --titlebar-text-color: #6D6D75;
+  --tab-container-background: #EBEBED;
+  --tab-background-active: #FAFAFA;
+  --tab-text-color-active: #333338;
+  --tab-outline-color: #D9D9DE;
+  --ribbon-background: #EBEBED;
+  --ribbon-background-collapsed: #EBEBED;
+  --icon-color: #7F7F87;
+  --icon-color-hover: #333338;
+  --icon-color-active: #FF3B30;
+  --text-selection: #FFE9E8;
   --text-highlight-bg: #FFF0C8;
-  --link-color: #B35F62;
-  --link-color-hover: #A24D55;
-  --checkbox-color: #D78381;
-  --list-marker-color: #D69B9A;
-  --list-marker-color-hover: #D78381;
-  --list-marker-color-collapsed: #D69B9A;
-  --table-background: #FAFAF7;
-  --table-header-background: #E7E9E7;
-  --table-row-alt-background: #F3F4F2;
-  --table-row-background-hover: #EDEFF0;
-  --table-border-color: #DDDEDE;
-  --h1-color: #B35F62;
-  --h2-color: #BC656B;
-  --h3-color: #C17479;
-  --h4-color: #C17A7D;
-  --h5-color: #697179;
-  --h6-color: #697179;
+  --link-color: #FF3B30;
+  --link-color-hover: #D92D23;
+  --checkbox-color: #FF3B30;
+  --list-marker-color: #D86760;
+  --list-marker-color-hover: #FF3B30;
+  --list-marker-color-collapsed: #D86760;
+  --table-background: #FAFAFA;
+  --table-header-background: #EEEEF0;
+  --table-row-alt-background: #F5F5F6;
+  --table-row-background-hover: #F7EEEE;
+  --table-border-color: #D9D9DE;
+  --h1-color: #FF3B30;
+  --h2-color: #FF3B30;
+  --h3-color: #E83930;
+  --h4-color: #D83932;
+  --h5-color: #6D6D75;
+  --h6-color: #6D6D75;
 }
 
 .theme-dark {
@@ -200,7 +200,7 @@
 }
 .theme-light .nav-file-title.is-active,
 .theme-light .nav-folder-title.is-active {
-  background-color: #E6E9EB;
+  background-color: #FFE9E8;
   border-inline-start: 2px solid var(--soft-coral);
 }
 .theme-dark .nav-file-title.is-active,
@@ -213,7 +213,7 @@
  * Only the close button hover color changes. */
 body:not(.is-mobile) .titlebar-button.mod-close:hover,
 body:not(.is-mobile) .titlebar-button.mod-close:focus-visible {
-  background-color: #C3545A;
+  background-color: #FF3B30;
   color: #FFFFFF;
 }
 body:not(.is-mobile) .titlebar-button.mod-close:hover svg,
@@ -289,35 +289,35 @@ body:not(.is-mobile) .titlebar-button.mod-close:focus-visible svg {
 }
 
 /* --------------------------------------------------------------------------
-   Cupertino Soft v0.3.0: Obsidian-default shell, coral accents and statistical
+   Cupertino Soft v0.4.0: Obsidian-default shell, Cupertino red and statistical
    grid tables. Pure CSS decoration; no window/tab/sidebar sizing overrides.
    -------------------------------------------------------------------------- */
 .theme-light {
-  --soft-metadata: #F6F6F3;
-  --soft-metadata-border: #E9EAE6;
-  --soft-selection: #F5E5E5;
-  --soft-selection-hover: #F1DDDD;
-  --soft-grid: #D5D8D6;
-  --soft-table-head: #E8EAE8;
-  --soft-row-alt: #F3F4F2;
-  --metadata-property-background: #F6F6F3;
-  --metadata-property-background-hover: #EEEEEB;
-  --metadata-label-background-hover: #EEEEEB;
+  --soft-metadata: #F2F2F4;
+  --soft-metadata-border: #E5E5E9;
+  --soft-selection: #FFE9E8;
+  --soft-selection-hover: #FFDDDA;
+  --soft-grid: #D9D9DE;
+  --soft-table-head: #EEEEF0;
+  --soft-row-alt: #F5F5F6;
+  --metadata-property-background: #F2F2F4;
+  --metadata-property-background-hover: #ECECF0;
+  --metadata-label-background-hover: #ECECF0;
   --table-border-width: 1px;
   --table-header-border-width: 1px;
   --table-column-first-border-width: 1px;
   --table-column-last-border-width: 1px;
   --table-row-last-border-width: 1px;
-  --table-row-alt-background: #F3F4F2;
-  --table-header-background: #E8EAE8;
-  --table-border-color: #D5D8D6;
-  --nav-item-background-active: #F5E5E5;
-  --nav-item-background-hover: #F3EEEE;
-  --text-accent: #B35F62;
-  --interactive-accent: #D78381;
-  --text-normal: #303438;
-  --link-color: #B35F62;
-  --list-marker-color: #D69B9A;
+  --table-row-alt-background: #F5F5F6;
+  --table-header-background: #EEEEF0;
+  --table-border-color: #D9D9DE;
+  --nav-item-background-active: #FFE9E8;
+  --nav-item-background-hover: #F7EEEE;
+  --text-accent: #FF3B30;
+  --interactive-accent: #FF3B30;
+  --text-normal: #333338;
+  --link-color: #FF3B30;
+  --list-marker-color: #D86760;
 }
 .theme-dark {
   --soft-metadata: #303234;
@@ -340,15 +340,15 @@ body:not(.is-mobile) .titlebar-button.mod-close:focus-visible svg {
 .theme-light .nav-file-title.is-active,
 .theme-light .nav-folder-title.is-active {
   background-color: var(--soft-selection);
-  border-inline-start: 2px solid #D78381;
-  color: #823F45;
+  border-inline-start: 2px solid #FF3B30;
+  color: #B22F28;
 }
 .theme-light .nav-file-title.is-active:hover,
 .theme-light .nav-folder-title.is-active:hover {
   background-color: var(--soft-selection-hover);
 }
 .theme-light .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: #A5545C;
+  color: #D9362E;
 }
 /* Native Obsidian properties/frontmatter, slightly cooler than Soft Paper. */
 .theme-light .metadata-container,
@@ -366,6 +366,11 @@ body:not(.is-mobile) .titlebar-button.mod-close:focus-visible svg {
 .theme-light .metadata-container .metadata-property:hover,
 .theme-dark .metadata-container .metadata-property:hover {
   background-color: var(--metadata-property-background-hover);
+}
+/* Prefix/field names carry the Cupertino accent, never the entered values. */
+.theme-light .metadata-container .metadata-property-key,
+.theme-light .metadata-container .metadata-property-key-input {
+  color: #D9362E;
 }
 /* Statistical-grid tables: thin rules on every cell, shaded header and very
    subtle alternating rows (including Obsidian Live Preview table widgets). */
@@ -402,9 +407,16 @@ body:not(.is-mobile) .titlebar-button.mod-close:focus-visible svg {
 .theme-light .markdown-source-view.mod-cm6 :is(.cm-formatting,.cm-formatting-link,.cm-formatting-quote,.cm-formatting-list),
 .theme-light .markdown-source-view.mod-cm6 :is(.cm-citation,.cm-pandoc-citation,.cm-zotero-citation),
 .theme-light .markdown-rendered :is(.citation,.pandoc-citation,.zotero-citation) {
-  color: #B35F62;
+  color: #FF3B30;
 }
 .theme-light .markdown-rendered :is(h1,h2,h3,h4),
 .theme-light .markdown-source-view.mod-cm6 :is(.HyperMD-header-1,.HyperMD-header-2,.HyperMD-header-3,.HyperMD-header-4) .cm-header {
-  color: #B35F62;
+  color: #FF3B30;
+}
+
+/* Best-effort orange spelling squiggles; Chromium/Electron support varies.
+ * Never recolor the misspelled word itself or disable proofreading. */
+.theme-light ::spelling-error,
+.theme-dark ::spelling-error {
+  text-decoration-color: #FF9500 !important;
 }

@@ -4,12 +4,12 @@ import assert from "node:assert/strict";
 const css = fs.readFileSync("theme.css","utf8");
 const manifest = JSON.parse(fs.readFileSync("manifest.json","utf8"));
 assert.equal(manifest.name,"Cupertino Soft");
-assert.equal(manifest.version,"0.3.0");
+assert.equal(manifest.version,"0.4.0");
 assert.ok(css.length > 7000 && css.length < 45000, "Theme must remain lean and layout-safe");
 for (const required of [
-  "#FAFAF7","#F1F2F3","#E8EAEC","#DDE0E3","#C97073",
+  "#FAFAFA","#EBEBED","#F2F2F4","#333338","#FF3B30","#FFE9E8",
   "titlebar-button.mod-close:hover","tbody tr:nth-child(even)",
-  "markdown-source-view.mod-cm6","CUPERTINO OBSIDIAN SOFT THEME v0.3.0"
+  "markdown-source-view.mod-cm6","CUPERTINO OBSIDIAN SOFT THEME v0.4.0"
 ]) assert.ok(css.includes(required), required);
 
 // Prevent the upstream visibility regressions from being reintroduced.
@@ -24,7 +24,11 @@ for (const prohibited of [
   /\.workspace-tab-header-container-inner[^\{]*\{[^}]*padding-left:\s*calc/s
 ]) assert.doesNotMatch(css,prohibited,"No structural hiding or upstream layout overrides allowed");
 assert.match(css, /\.metadata-container/);
-assert.match(css, /--soft-selection:\s*#F5E5E5/);
+assert.match(css, /--soft-selection:\s*#FFE9E8/);
+assert.match(css, /--text-normal:\s*#333338/);
+assert.match(css, /\.metadata-container \.metadata-property-key/);
+assert.match(css, /::spelling-error/);
+assert.match(css, /text-decoration-color:\s*#FF9500/);
 assert.match(css, /border-collapse:\s*collapse/);
 assert.match(css, /padding:\s*6px 9px/);
 assert.match(css, /--table-row-alt-background/);
@@ -41,4 +45,4 @@ for(let i=0;i<css.length;i++) {
 }
 assert.equal(depth,0);
 assert.ok(!comment && !quote);
-console.log("Cupertino Soft v0.3.0: color styling validated; app chrome remains native.");
+console.log("Cupertino Soft v0.4.0: color styling validated; app chrome remains native.");

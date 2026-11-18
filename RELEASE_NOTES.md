@@ -1,14 +1,16 @@
-# Cupertino Obsidian Soft Theme v0.3.0
+# Cupertino Obsidian Soft Theme v0.4.0 — original Cupertino gray and red
 
-This release finalizes the paired Cupertino Soft visual direction: **native Obsidian-default layout**, Soft Paper reading background (`#FAFAF7`), neutral light-gray panels (`#F3F3F3`), and restrained pale-coral selections (`#F5E5E5`).
+This release coordinates the visual language with Cupertino Zotero Soft Theme v0.6.0.
 
-- Soft coral H1–H4 headings, links, Markdown markers and supported citation spans.
-- Pale-coral active-file/active-folder backgrounds, legible text and a narrow coral accent.
-- Metadata/properties card lightly shaded `#F6F6F3` relative to the reading page.
-- Statistical-grid tables with light gray header, **1px cell rules**, and alternating gray rows.
-- Preserves Obsidian's native tab strip, ribbon icons, menu and Linux window buttons; the close button is tinted coral on hover.
-- The companion extension is [Cupertino Zotero Soft Theme](https://github.com/vict0rg/cupertino-zotero-soft-theme).
+- Nearly white #FAFAFA note background, original Cupertino #EBEBED sidebar/toolbars and #333338 reading text.
+- Bright Cupertino red #FF3B30 H1–H4 titles, links, Markdown syntax and supported citation spans.
+- Pale #FFE9E8 selected-file/folder backgrounds, with a narrow original red accent.
+- Metadata/properties pane #F2F2F4, a subtle shade darker than the writing surface. Metadata field names receive restrained red color; entered values remain in their original text color.
+- Statistical-grid tables have thin 1px rules, gray headers and alternating pale-gray #F5F5F6 rows.
+- Experimental orange #FF9500 spelling-error underline color (best effort; depends on Chromium/Electron support). Spell checking remains enabled.
+- Retains the v0.3.0 layout-safe/native window buttons, tab strip, ribbon icons and desktop controls; no note data is modified.
+- Companion release: https://github.com/vict0rg/cupertino-zotero-soft-theme/releases/tag/v0.6.0
 
-Theme CSS is based on original, minimal styling while preserving the fork's MIT source history and credits for Cupertino by svnaxis. Design references Notation, Typewriter, Shimmering Focus and Olivier's Theme remain acknowledged with no source reuse. No note data is modified.
+For existing installations, replace theme.css and manifest.json in the Cupertino Soft theme directory or run scripts/install-and-activate.sh. No vault contents, notes, snippets or plugin settings are replaced by the theme stylesheet.
 
-**Gallery status:** not yet approved by Obsidian. Manual installation is available until release/screenshot/submission are reviewed.
+The MIT fork preserves original source history and credits for Cupertino by svnaxis. Notation, Typewriter, Shimmering Focus and Olivier's Theme remain acknowledged as design references. Visual verification on each Linux desktop remains recommended.

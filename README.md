@@ -1,31 +1,32 @@
 # Cupertino Obsidian Soft Theme
 
-A neutral-gray, paper-focused Obsidian theme. The document surface is **Soft Paper (#FAFAF7)**, while navigation, tabs, controls and borders use cool Cupertino grays. Subtle coral replaces intrusive heading bars.
+A near-white Obsidian theme with the original Cupertino gray shell (#EBEBED), comfortable #333338 text and bright-but-controlled #FF3B30 red accents.
 
-**Recommended companion:** [Cupertino Zotero Soft Theme](https://github.com/vict0rg/cupertino-zotero-soft-theme), which offers the same Soft Paper color in Zotero's PDF reader.
+**Recommended companion:** [Cupertino Zotero Soft Theme](https://github.com/vict0rg/cupertino-zotero-soft-theme), which offers the same Soft Gray background and text color in Zotero's PDF/EPUB reader.
 
 > The in-app theme is named **Cupertino Soft** to follow Obsidian's guidance against redundant “Obsidian” wording in the gallery. Its full GitHub project title is **Cupertino Obsidian Soft Theme**.
 
-## v0.3.0: Safe, native window controls
+## v0.4.0: Original gray/red palette and native controls
 
-**Important repair:** the earlier version inherited thousands of lines of Cupertino layout CSS that could hide the Obsidian tab strip, menu/window controls, and side-panel icons on Linux. This version **replaces that layout-heavy source with a small, original, appearance-focused stylesheet**, while preserving the Soft Paper / gray / coral design. Obsidian's built-in layout now handles tabs, ribbons, headings and titlebar button sizing.
+**Important repair:** the earlier version inherited thousands of lines of Cupertino layout CSS that could hide the Obsidian tab strip, menu/window controls, and side-panel icons on Linux. This version **replaces that layout-heavy source with a small, original, appearance-focused stylesheet**, while preserving Obsidian's own layout and our new gray/red design. Obsidian's built-in layout now handles tabs, ribbons, headings and titlebar button sizing.
 
-Earlier versions remain in the repository's Git history, including the MIT-licensed Cupertino source. v0.3.0 has not yet been visually verified on all Linux desktop environments.
+Earlier versions remain in the repository's Git history, including the MIT-licensed Cupertino source. v0.4.0 has not yet been visually verified on all Linux desktop environments.
 
-## Consistent default-Obsidian style
+## Consistent Cupertino Soft Gray style
 
-The layout uses Obsidian's own controls, header spacing, native tabs and window buttons. The main reading surface is **Soft Paper #FAFAF7**; panels use quiet gray; navigation selection uses **pale coral #F5E5E5** with a narrow accent stripe. Page titles H1–H4 are muted coral. The metadata/properties area uses a barely darker `#F6F6F3` panel. Tables resemble clear statistical grids, with thin gray rules on every cell, a stronger gray header and subtle zebra bands.
+The layout uses Obsidian's own controls, header spacing, native tabs and window buttons. The writing surface is **Soft Gray #FAFAFA** with **#333338** text; sidebars use the original Cupertino **#EBEBED**. Selection uses **#FFE9E8** with a narrow **#FF3B30** stripe. H1–H4 titles use Cupertino red. The metadata/properties area is subtly shaded **#F2F2F4**, with red-tinted field names but normal dark values. Tables resemble statistical grids with 1px borders, gray headers and pale alternating rows.
 
-The coral was inspired by the original [Cupertino for Zotero](https://github.com/shenghuang-123/cupertino-for-zotero) system-red / coral colors (`#FF3B30` and `#FF6B61`), intentionally reduced in saturation for long-form reading.
+Our red accents follow the original [Cupertino for Zotero](https://github.com/shenghuang-123/cupertino-for-zotero) system-red color, **#FF3B30**; the selection fill remains pale to avoid overwhelming text.
 
 ## Features
 
-- Soft Paper near-white writing surface (`#FAFAF7`), with **no grid**
-- Default-like gray sidebars `#F3F3F3`, toolbars `#EEEEEE` and borders `#DDDEDE`
-- H1–H4 headings in gentle coral; **no long red bars or heading underlines**
-- Markdown syntax markers, links and supported citation spans tinted coral, without editing note content
+- Soft Gray near-white writing surface (`#FAFAFA`), with **no grid**, and original Cupertino `#333338` body text
+- Original Cupertino gray sidebars and toolbars `#EBEBED`, thin borders `#D9D9DE`
+- H1–H4 headings in original Cupertino red `#FF3B30`; **no long red bars or heading underlines**
+- Markdown syntax markers, links, supported citation spans and metadata field names tinted red, without changing note content
 - Normal-size Linux titlebar buttons, with a **red close button on hover**
 - Light-gray alternating table rows, muted bullets and a coordinated dark mode
+- Best-effort **orange #FF9500** spelling-error squiggles via CSS `::spelling-error`; support depends on the Obsidian/Electron version and spell checking remains enabled
 
 Pandoc/Zotero citation plugins may use custom rendering classes, and not all citation spans can be recolored without a plugin-specific selector. The theme does not change stored citations or Markdown.
 
@@ -61,22 +62,23 @@ The default vault path is `~/Dropbox/500-OBSIDIAN`; provide a different vault pa
 
 | Purpose | Color |
 | --- | --- |
-| Note / PDF Soft Paper | `#FAFAF7` |
-| Navigation panels | `#F3F3F3` |
-| Tabs and toolbars | `#EEEEEE` |
-| Borders | `#DDDEDE` |
-| Alternate table rows | `#F3F4F2` |
-| Main text | `#31353A` |
-| Pale coral selection | `#F5E5E5` |
-| Coral details | `#D78381` |
+| Note / PDF/EPUB Soft Gray | `#FAFAFA` |
+| Navigation panels | `#EBEBED` |
+| Metadata/properties panel | `#F2F2F4` |
+| Tabs and toolbars | `#EBEBED` |
+| Borders | `#D9D9DE` |
+| Alternate table rows | `#F5F5F6` |
+| Main text | `#333338` |
+| Pale red selection | `#FFE9E8` |
+| Cupertino red details | `#FF3B30` |
 
 ## Zotero companion
 
-[**Cupertino Zotero Soft Theme**](https://github.com/vict0rg/cupertino-zotero-soft-theme) matches this paper color and Cupertino gray interface, while providing a five-option PDF background selector. Install both themes for consistent navigation, writing and long-form reading. Each is installed independently.
+[**Cupertino Zotero Soft Theme**](https://github.com/vict0rg/cupertino-zotero-soft-theme) matches this gray background and the #333338 text color, with a Reading Colors selector supporting named PDF/EPUB Background and Foreground themes. Install both themes for consistent navigation, writing and long-form reading. Each is installed independently.
 
 ## Community Themes submission
 
-**This theme is not yet listed in Obsidian → Appearance → Manage.** To get listed, a release tagged `0.3.0` must contain `theme.css` and `manifest.json` as attached files, a **real screenshot** must be added (recommended 512×288), and the owner must submit the theme via [Obsidian Community Directory](https://community.obsidian.md). Obsidian performs its own review. See [SUBMISSION.md](SUBMISSION.md).
+**This theme is not yet listed in Obsidian → Appearance → Manage.** To get listed, a release tagged `0.4.0` must contain `theme.css` and `manifest.json` as attached files, a **real screenshot** must be added (recommended 512×288), and the owner must submit the theme via [Obsidian Community Directory](https://community.obsidian.md). Obsidian performs its own review. See [SUBMISSION.md](SUBMISSION.md).
 
 ## Attribution and licensing
 
