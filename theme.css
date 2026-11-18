@@ -1,5 +1,5 @@
 /*
- * CUPERTINO OBSIDIAN SOFT THEME v0.4.0
+ * CUPERTINO OBSIDIAN SOFT THEME v0.4.1
  * License: MIT. Maintainer: vict0rg (https://github.com/vict0rg)
  * This simplified stylesheet replaces legacy Cupertino layout manipulation
  * with restrained appearance-only CSS. It intentionally leaves window menus,
@@ -414,9 +414,12 @@ body:not(.is-mobile) .titlebar-button.mod-close:focus-visible svg {
   color: #FF3B30;
 }
 
-/* Best-effort orange spelling squiggles; Chromium/Electron support varies.
- * Never recolor the misspelled word itself or disable proofreading. */
+/* In Chromium/Electron, changing only text-decoration-color on a spelling
+ * highlight can leave its underline undrawn. Explicitly request the complete
+ * wavy decoration, while preserving the original color of the word itself.
+ * Only affects text the native spellchecker has already marked as incorrect. */
 .theme-light ::spelling-error,
 .theme-dark ::spelling-error {
+  text-decoration: underline wavy #FF9500 !important;
   text-decoration-color: #FF9500 !important;
 }

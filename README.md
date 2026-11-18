@@ -6,6 +6,10 @@ A near-white Obsidian theme with the original Cupertino gray shell (#EBEBED), co
 
 > The in-app theme is named **Cupertino Soft** to follow Obsidian's guidance against redundant “Obsidian” wording in the gallery. Its full GitHub project title is **Cupertino Obsidian Soft Theme**.
 
+## v0.4.1: Spelling underline repair
+
+This maintenance version makes the orange spelling-error **wavy underline explicit**, rather than changing only its color. The previous styling could suppress the native mark on some Chromium/Electron combinations. Text stays `#333338`; only the squiggle is orange. This works in editable text when the native spellchecker reports a spelling error. If underlines remain absent, verify **Settings → Editor → Spellcheck** and the language dictionary using Obsidian's default theme to distinguish a spellcheck-service issue from theme styling.
+
 ## v0.4.0: Original gray/red palette and native controls
 
 **Important repair:** the earlier version inherited thousands of lines of Cupertino layout CSS that could hide the Obsidian tab strip, menu/window controls, and side-panel icons on Linux. This version **replaces that layout-heavy source with a small, original, appearance-focused stylesheet**, while preserving Obsidian's own layout and our new gray/red design. Obsidian's built-in layout now handles tabs, ribbons, headings and titlebar button sizing.
@@ -26,7 +30,7 @@ Our red accents follow the original [Cupertino for Zotero](https://github.com/sh
 - Markdown syntax markers, links, supported citation spans and metadata field names tinted red, without changing note content
 - Normal-size Linux titlebar buttons, with a **red close button on hover**
 - Light-gray alternating table rows, muted bullets and a coordinated dark mode
-- Best-effort **orange #FF9500** spelling-error squiggles via CSS `::spelling-error`; support depends on the Obsidian/Electron version and spell checking remains enabled
+- Explicit **orange #FF9500** wavy spelling-error decoration via CSS `::spelling-error`; display still depends on the Obsidian/Electron version and spellcheck settings
 
 Pandoc/Zotero citation plugins may use custom rendering classes, and not all citation spans can be recolored without a plugin-specific selector. The theme does not change stored citations or Markdown.
 
@@ -78,7 +82,7 @@ The default vault path is `~/Dropbox/500-OBSIDIAN`; provide a different vault pa
 
 ## Community Themes submission
 
-**This theme is not yet listed in Obsidian → Appearance → Manage.** To get listed, a release tagged `0.4.0` must contain `theme.css` and `manifest.json` as attached files, a **real screenshot** must be added (recommended 512×288), and the owner must submit the theme via [Obsidian Community Directory](https://community.obsidian.md). Obsidian performs its own review. See [SUBMISSION.md](SUBMISSION.md).
+**This theme is not yet listed in Obsidian → Appearance → Manage.** To get listed, a release tagged `0.4.1` must contain `theme.css` and `manifest.json` as attached files, a **real screenshot** must be added (recommended 512×288), and the owner must submit the theme via [Obsidian Community Directory](https://community.obsidian.md). Obsidian performs its own review. See [SUBMISSION.md](SUBMISSION.md).
 
 ## Attribution and licensing
 
