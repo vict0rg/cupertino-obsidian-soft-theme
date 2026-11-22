@@ -1,17 +1,27 @@
-# Obsidian Community Themes submission checklist
+# Publicação do Cupertino Soft no diretório oficial do Obsidian
 
-Official guide: https://docs.obsidian.md/Themes/App%20themes/Submit%20your%20theme
+Guia oficial: https://docs.obsidian.md/Themes/App%20themes/Submit%20your%20theme
 
-- [x] Public GitHub repository: https://github.com/vict0rg/cupertino-obsidian-soft-theme
-- [x] Root `theme.css`, `manifest.json`, `LICENSE`, and English README
-- [x] Manifest in-app name **Cupertino Soft**, version `0.3.0`
-- [x] Complete MIT provenance, credits, and companion theme reference
-- [ ] Verify that GitHub Actions is enabled for this fork and run the release workflow
-- [ ] Confirm the GitHub release **0.3.0** contains attached `theme.css` and `manifest.json`
-- [ ] Verify the v0.3.0 safe-layout rewrite restores the tab strip and titlebar on Linux
-- [ ] Test light and dark appearances, window controls and citations in the real Obsidian client
-- [ ] Add a real 512×288 screenshot to `screenshots/soft-light.png` (never borrow an upstream screenshot)
-- [ ] Sign in at https://community.obsidian.md, link GitHub account `vict0rg`, and submit as a Theme using the new repository URL
-- [ ] Address automated and human review feedback
+## Pronto no repositório
 
-Until the catalog approves the theme, manual installation is required. The owner must complete the directory account submission.
+- [x] Repositório público: https://github.com/vict0rg/cupertino-obsidian-soft-theme
+- [x] Arquivos na raiz: `theme.css`, `manifest.json`, `LICENSE` e `README.md`
+- [x] Nome no Obsidian: **Cupertino Soft**; versão **0.4.1**; compatibilidade mínima **1.14.0**
+- [x] `versions.json` contém `0.4.1`
+- [x] Créditos, licença MIT e procedência do fork de svnaxis
+- [x] Instruções de instalação no Linux: [INSTALL_LINUX.md](INSTALL_LINUX.md)
+- [x] Workflow de publicação: `.github/workflows/release.yml`
+
+## Para aparecer em Aparência > Gerenciar
+
+- [ ] Confirmar que **GitHub Actions** está habilitado neste fork e que o workflow executa com sucesso
+- [ ] Confirmar o Release **0.4.1** (tag sem prefixo `v`) com `theme.css` e `manifest.json` anexados
+- [ ] Testar o tema real no Obsidian: modo claro, modo escuro, abas, controles de janela, pesquisa e citações
+- [ ] Capturar uma imagem **real** do Cupertino Soft com dimensões recomendadas de **512 × 288 px**, por exemplo `screenshots/soft-light.png` (não reutilizar imagem do tema original)
+- [ ] Entrar em https://community.obsidian.md com uma conta Obsidian e conectar o GitHub `vict0rg`
+- [ ] Em **Themes > New theme**, informar o repositório, captura de tela e modos suportados, e enviar à revisão
+- [ ] Acompanhar a validação e responder a eventuais exigências do diretório
+
+O campo **About** (descrição e tópicos) do GitHub é independente do manifesto, do Release e da aprovação no diretório. O tema não aparece na galeria apenas por ter um Release.
+
+A instalação manual continua disponível enquanto a submissão não for aprovada.

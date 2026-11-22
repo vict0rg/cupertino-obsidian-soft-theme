@@ -36,6 +36,9 @@ Pandoc/Zotero citation plugins may use custom rendering classes, and not all cit
 
 ## Installation
 
+**Linux (Obsidian Flatpak ou .deb):** veja [INSTALL_LINUX.md](INSTALL_LINUX.md) para instalar ou atualizar o Cupertino Soft nas três máquinas, sem alterar suas notas, plugins ou snippets, e para voltar ao tema padrão se necessário.
+
+
 1. Download [theme.css](https://raw.githubusercontent.com/vict0rg/cupertino-obsidian-soft-theme/main/theme.css) and [manifest.json](https://raw.githubusercontent.com/vict0rg/cupertino-obsidian-soft-theme/main/manifest.json).
 2. Put both files in `<your-vault>/.obsidian/themes/Cupertino Soft/`.
 3. Open Obsidian **Settings → Appearance → Themes** and choose **Cupertino Soft**.
