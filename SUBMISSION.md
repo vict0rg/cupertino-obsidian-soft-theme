@@ -14,8 +14,8 @@ Guia oficial: https://docs.obsidian.md/Themes/App%20themes/Submit%20your%20theme
 
 ## Para aparecer em Aparência > Gerenciar
 
-- [ ] Confirmar que **GitHub Actions** está habilitado neste fork e que o workflow executa com sucesso
-- [ ] Confirmar o Release **0.4.1** (tag sem prefixo `v`) com `theme.css` e `manifest.json` anexados
+- [x] Confirmar que **GitHub Actions** está habilitado neste fork e que o workflow executa com sucesso
+- [x] Confirmar o Release **0.4.1** (tag sem prefixo `v`) com `theme.css` e `manifest.json` anexados
 - [ ] Testar o tema real no Obsidian: modo claro, modo escuro, abas, controles de janela, pesquisa e citações
 - [ ] Capturar uma imagem **real** do Cupertino Soft com dimensões recomendadas de **512 × 288 px**, por exemplo `screenshots/soft-light.png` (não reutilizar imagem do tema original)
 - [ ] Entrar em https://community.obsidian.md com uma conta Obsidian e conectar o GitHub `vict0rg`
