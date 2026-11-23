@@ -4,6 +4,16 @@ A near-white Obsidian theme with the original Cupertino gray shell (#EBEBED), co
 
 **Recommended companion:** [Cupertino Zotero Soft Theme](https://github.com/vict0rg/cupertino-zotero-soft-theme), which offers the same Soft Gray background and text color in Zotero's PDF/EPUB reader.
 
+## Screenshots / Capturas de tela
+
+Cupertino Soft em **modo claro**, instalado no Obsidian para Linux. Capturas reais do tema em funcionamento:
+
+| Títulos, propriedades e listas | Tarefas, tabelas, callouts e código |
+| --- | --- |
+| <img src="screenshots/cupertino-soft-light-typography.png" alt="Cupertino Soft: títulos, propriedades e listas, no modo claro" width="480"> | <img src="screenshots/cupertino-soft-light-components.png" alt="Cupertino Soft: listas numeradas, tarefas, tabela, callouts e código, no modo claro" width="480"> |
+
+> Os exemplos demonstram o tema em modo claro; o modo escuro ainda precisa de uma captura e validação visual em Linux.
+
 > The in-app theme is named **Cupertino Soft** to follow Obsidian's guidance against redundant “Obsidian” wording in the gallery. Its full GitHub project title is **Cupertino Obsidian Soft Theme**.
 
 ## v0.4.1: Spelling underline repair
@@ -85,7 +95,7 @@ The default vault path is `~/Dropbox/500-OBSIDIAN`; provide a different vault pa
 
 ## Community Themes submission
 
-**This theme is not yet listed in Obsidian → Appearance → Manage.** To get listed, a release tagged `0.4.1` must contain `theme.css` and `manifest.json` as attached files, a **real screenshot** must be added (recommended 512×288), and the owner must submit the theme via [Obsidian Community Directory](https://community.obsidian.md). Obsidian performs its own review. See [SUBMISSION.md](SUBMISSION.md).
+**This theme is not yet listed in Obsidian → Appearance → Manage.** The [0.4.1 release](https://github.com/vict0rg/cupertino-obsidian-soft-theme/releases/tag/0.4.1) already includes `theme.css` and `manifest.json`, and real screenshots are available above. To appear in Obsidian's gallery, its owner must submit the repository via [Obsidian Community Directory](https://community.obsidian.md); publication depends on Obsidian's review. See [SUBMISSION.md](SUBMISSION.md).
 
 ## Attribution and licensing
 
